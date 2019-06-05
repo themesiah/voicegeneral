@@ -22,6 +22,8 @@ GameObject:
   - component: {fileID: 33118146792644036}
   - component: {fileID: 23143144909248368}
   - component: {fileID: 208139403905879902}
+  - component: {fileID: 65859560881334020}
+  - component: {fileID: 114825647345451684}
   m_Layer: 0
   m_Name: bosquecillo
   m_TagString: Untagged
@@ -40,7 +42,7 @@ GameObject:
   - component: {fileID: 33960659656153600}
   - component: {fileID: 23594719188631738}
   - component: {fileID: 65732101393091958}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: bosque2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -174,6 +176,47 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 20, y: 20.000004, z: 4.057664}
   m_Center: {x: 1.4927969e-15, y: 0, z: -2.028832}
+--- !u!65 &65859560881334020
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1198682270204470}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 11.1, y: 12.37, z: 22.43}
+  m_Center: {x: -0.4590454, y: -0.1632462, z: -0.98}
+--- !u!114 &114825647345451684
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1198682270204470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9536e123018e8ae469068a581ddce423, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RuntimeSet: {fileID: 11400000, guid: 9b5ecaf08e968824f8ff532c5eead9c4, type: 2}
+  ignoreTypes: 000000000100000002000000
+  events:
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1198682270204470}
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!208 &208139403905879902
 NavMeshObstacle:
   m_ObjectHideFlags: 1

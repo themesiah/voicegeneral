@@ -9,11 +9,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5ee68a70185e10946a1e327f5c2ee182, type: 3}
-  m_Name: Archer
+  m_Name: ArcherAI
   m_EditorClassIdentifier: 
   unitName: Archers
   unitType: 1
-  isAI: 0
+  isAI: 1
   firstState: {fileID: 11400000, guid: 3373f0735474f9a41830f9a8004080de, type: 2}
   minMaxPreparationDelay: {x: 0.2, y: 1.1}
   preparationEnd: 3

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class OneHitDestructible : MonoBehaviour, IDamageable
+public class OneHitDestructible : Damageable
 {
     [SerializeField]
     private List<UnityEvent> events;
@@ -16,7 +16,7 @@ public class OneHitDestructible : MonoBehaviour, IDamageable
         }
     }
 
-    public void TakeDamage(int damage)
+    public override void CalculateDamage(int damage)
     {
         events[0].Invoke();
         events.RemoveAt(0);

@@ -8,7 +8,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
+  m_Script: {fileID: 11500000, guid: 7a89b3bab60d9444ba820ee3fa40dac2, type: 3}
   m_Name: Aliases
   m_EditorClassIdentifier: Assembly-CSharp::Alias
   aliases:

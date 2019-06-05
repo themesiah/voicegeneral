@@ -5,11 +5,6 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "States/Aim State")]
 public class AimState : ScriptableState
 {
-    [SerializeField]
-    private float maxAngle = 60f;
-    [SerializeField]
-    private float maxDistance = 50f;
-
     public override void OnEnterState(UnitController controller)
     {
         controller.Input.StartPointer();

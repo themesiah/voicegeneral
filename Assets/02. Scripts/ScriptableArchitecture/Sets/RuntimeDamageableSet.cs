@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public interface IDamageable
+[CreateAssetMenu]
+public class RuntimeDamageableSet : RuntimeSet<Damageable>
 {
-    void TakeDamage(int damage);
 }

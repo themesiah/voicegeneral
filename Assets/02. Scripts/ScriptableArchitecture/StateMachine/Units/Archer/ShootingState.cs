@@ -5,6 +5,12 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "States/Shooting State")]
 public class ShootingState : ScriptableState
 {
+    struct ShotInfo
+    {
+        public Vector3 force;
+        public float time;
+    }
+
     public override void OnEnterState(UnitController controller)
     {
         
@@ -18,11 +24,12 @@ public class ShootingState : ScriptableState
         TargetController.instance.StopTarget();
         // Calculate the force
         Vector3 point = TargetController.instance.GetPoint();
-        Vector3 force = CalculateForce(controller, controller.Unit.transform.position, point);
+        ShotInfo shotInfo = CalculateForce(controller, controller.Unit.transform.position, point);
         foreach (Soldier s in soldiers)
         {
-            controller.Unit.StartCoroutine(SpawnArrow(controller, s, force));
+            controller.Unit.StartCoroutine(SpawnArrow(controller, s, shotInfo));
         }
+        controller.Unit.StartCoroutine(SpawnDamage(controller, point, shotInfo));
     }
 
     public override void OnExitState(UnitController controller)
@@ -33,7 +40,7 @@ public class ShootingState : ScriptableState
     {
     }
 
-    private Vector3 CalculateForce(UnitController controller, Vector3 position, Vector3 target)
+    private ShotInfo CalculateForce(UnitController controller, Vector3 position, Vector3 target)
     {
         // First we get the 2D vector from the archers position to the target
         Vector3 vector = target - position;
@@ -49,14 +56,24 @@ public class ShootingState : ScriptableState
         // We have the time, so we can now know the force to apply to get to that point in that time.
         float force = distance / time;
         // Why sqrt of 2? Who knows. I don't know why it works, but it works.
-        return vector * force * Mathf.Sqrt(2f);
+        ShotInfo si = new ShotInfo();
+        si.time = time;
+        si.force = vector * force * Mathf.Sqrt(2f);
+        return si;
     }
 
-    IEnumerator SpawnArrow(UnitController controller, Soldier s, Vector3 force)
+    IEnumerator SpawnArrow(UnitController controller, Soldier s, ShotInfo shotInfo)
     {
         yield return new WaitForSeconds(Random.Range(0f, 0.3f));
         GameObject go = Instantiate(controller.Data.ProjectilePrefab, s.transform.position, Quaternion.identity);
         Rigidbody rb = go.GetComponent<Rigidbody>();
-        rb.AddForce(force, ForceMode.VelocityChange);
+        rb.AddForce(shotInfo.force, ForceMode.VelocityChange);
+        GameObject.Destroy(go, shotInfo.time);
+    }
+
+    IEnumerator SpawnDamage(UnitController controller, Vector3 target, ShotInfo shotInfo)
+    {
+        yield return new WaitForSeconds(shotInfo.time-0.3f);
+        Instantiate(controller.Data.AreaDamage, target, Quaternion.identity);
     }
 }

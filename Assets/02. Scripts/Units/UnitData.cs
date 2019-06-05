@@ -42,5 +42,8 @@ public class UnitData : ScriptableObject {
     [SerializeField]
     private float projectileForce;
     public float ProjectileForce { get { return projectileForce; } }
+    [SerializeField]
+    private GameObject areaDamage;
+    public GameObject AreaDamage { get { return areaDamage; } }
 
 }

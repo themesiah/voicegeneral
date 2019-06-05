@@ -7,7 +7,7 @@ public abstract class UnitController
 {
     protected IUnitInput input;
     protected UnitData data;
-    protected Soldier[] soldiers;
+    protected List<Soldier> soldiers;
     protected Unit unit;
     protected bool selected;
     private bool selecting;
@@ -16,9 +16,10 @@ public abstract class UnitController
     public Vector3 targetPosition;
 
     private static event UnityAction unselect = delegate { };
+    private static bool unselectedThisFrame = false;
     protected Dictionary<string, UnityAction<string>> actions;
 
-    public void Init(IUnitInput i, UnitData d, Soldier[] s, Unit u)
+    public void Init(IUnitInput i, UnitData d, List<Soldier> s, Unit u)
     {
         actions = new Dictionary<string, UnityAction<string>>();
         input = i;
@@ -26,13 +27,19 @@ public abstract class UnitController
         soldiers = s;
         unit = u;
         selected = false;
-        selecting = false;
         unselect += Unselect;
 
         actions.Add(data.UnitName, Select);
         foreach (var action in Alias.GetWords())
         {
-            actions.Add(action, Message);
+            if (Alias.GetOrder(action) == data.UnitName)
+            {
+                actions.Add(action, Select);
+            }
+            else
+            {
+                actions.Add(action, Message);
+            }
         }
         /*actions.Add("para", Message);
         actions.Add("esperen", Message);
@@ -51,10 +58,9 @@ public abstract class UnitController
     {
         if (data.IsAI == false)
         {
-            selecting = true;
             unselect();
-            selecting = false;
-            Debug.Log("Unidad " + data.UnitName + " seleccionada");
+            unselectedThisFrame = true;
+            Debug.Log("Unidad " + data.UnitName + " de game object " + unit.gameObject.name + " seleccionada");
             foreach (Soldier s in soldiers)
             {
                 s.SetSelectedMaterial();
@@ -65,14 +71,17 @@ public abstract class UnitController
     
     protected void Message(string message)
     {
-        currentState.Message(this, message);
+        if (selected || data.IsAI)
+        {
+            currentState.Message(this, message);
+        }
     }
 
     private void Unselect()
     {
-        if (data.IsAI == false && !selecting)
+        if (data.IsAI == false && !unselectedThisFrame)
         {
-            Debug.Log("Unidad " + data.UnitName + " deseleccionada");
+            Debug.Log("Unidad " + data.UnitName + " de game object " + unit.gameObject.name + " deseleccionada");
             foreach (Soldier s in soldiers)
             {
                 s.UnsetSelectedMaterial();
@@ -84,6 +93,7 @@ public abstract class UnitController
     public void Tick()
     {
         currentState.Tick(this);
+        unselectedThisFrame = false;
     }
 
     public float TimeSinceStateChange()
@@ -106,7 +116,7 @@ public abstract class UnitController
 
     #region Getters
     public UnitData Data { get { return data; } }
-    public Soldier[] Soldiers { get { return soldiers; } }
+    public Soldier[] Soldiers { get { return soldiers.ToArray(); } }
     public IUnitInput Input { get { return input; } }
     public Unit Unit { get { return unit; } }
     #endregion
