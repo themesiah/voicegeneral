@@ -8,26 +8,33 @@ using System.Linq;
 public class VoiceManager : MonoBehaviour {
     public static VoiceManager instance = null;
     private KeywordRecognizer keywordRecognizer;
-    private Dictionary<string, UnityAction> keywordActions;
+    private Dictionary<string, UnityAction<string>> keywordActions;
 
     private void Awake()
     {
         instance = this;
-        keywordActions = new Dictionary<string, UnityAction>();
+        keywordActions = new Dictionary<string, UnityAction<string>>();
 
-        // General
+        var words = Alias.GetWords();
+        foreach (var word in words)
+        {
+            AddKeyword(word);
+        }
+
+        /*// General
         AddKeyword("para");
         AddKeyword("esperen");
 
         // Spearmen
         AddKeyword("lanceros");
         AddKeyword("escudos");
+        AddKeyword("cúbranse");
 
         // Archers
         AddKeyword("arqueros");
         AddKeyword("apunten");
         AddKeyword("fuego");
-        AddKeyword("disparen");
+        AddKeyword("disparen");*/
 
         keywordRecognizer = new KeywordRecognizer(keywordActions.Keys.ToArray());
         keywordRecognizer.OnPhraseRecognized += OnKeywordsRecognized;
@@ -45,7 +52,7 @@ public class VoiceManager : MonoBehaviour {
         }
     }
 
-    public void AddAction(string keyword, UnityAction action)
+    public void AddAction(string keyword, UnityAction<string> action)
     {
         if (keywordActions.ContainsKey(keyword))
         {
@@ -62,6 +69,6 @@ public class VoiceManager : MonoBehaviour {
 
     private void OnKeywordsRecognized(PhraseRecognizedEventArgs args)
     {
-        keywordActions[args.text].Invoke();
+        keywordActions[args.text].Invoke(args.text);
     }
 }

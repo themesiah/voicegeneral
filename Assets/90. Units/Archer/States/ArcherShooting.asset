@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af000bf7c5c358e4096fa4fcef713c8d, type: 3}
+  m_Name: ArcherShooting
+  m_EditorClassIdentifier: 
+  transitions:
+  - condition: {fileID: 11400000, guid: 36db17ea8044d054abce88c3ff466094, type: 2}
+    trueState: {fileID: 11400000, guid: 3373f0735474f9a41830f9a8004080de, type: 2}
+    falseState: {fileID: 0}
+  messageTransitions: []

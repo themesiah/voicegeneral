@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 0}
+  m_Name: Aliases
+  m_EditorClassIdentifier: Assembly-CSharp::Alias
+  aliases:
+  - alias: esperen
+    order: Wait
+  - alias: paren
+    order: Wait
+  - alias: disparen
+    order: Fire
+  - alias: fuego
+    order: Fire
+  - alias: apunten
+    order: Aim
+  - alias: "mu\xE9vanse"
+    order: Move
+  - alias: moveos
+    order: Move
+  - alias: "aqu\xED"
+    order: Here
+  - alias: escudos
+    order: Shields
+  - alias: "c\xFAbranse"
+    order: Shields
+  - alias: arqueros
+    order: Archers
+  - alias: lanceros
+    order: Spearmen

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ababc1f20f547d45a9e9f7e7664cae3, type: 3}
+  m_Name: ArcherMove
+  m_EditorClassIdentifier: 
+  transitions:
+  - condition: {fileID: 11400000, guid: 0c4d567d704de6d4e8422349ca85a11b, type: 2}
+    trueState: {fileID: 11400000, guid: 3373f0735474f9a41830f9a8004080de, type: 2}
+    falseState: {fileID: 0}
+  messageTransitions:
+  - message: Wait
+    state: {fileID: 11400000, guid: 3373f0735474f9a41830f9a8004080de, type: 2}
+  - message: Aim
+    state: {fileID: 11400000, guid: ce67cfe75423371438b7c0993f708617, type: 2}

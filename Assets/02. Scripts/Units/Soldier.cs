@@ -1,11 +1,12 @@
 ﻿using UnityEngine;
+using System.Collections;
 
 public class Soldier : MonoBehaviour
 {
     [SerializeField]
     private Animator anim;
     [SerializeField]
-    private MeshRenderer[] renderers;
+    private Renderer[] renderers;
     private Material[] previousMaterials;
     [SerializeField]
     private Material selectedMaterial;
@@ -18,7 +19,7 @@ public class Soldier : MonoBehaviour
         }
         if (renderers == null || renderers.Length == 0)
         {
-            renderers = GetComponentsInChildren<MeshRenderer>();
+            renderers = GetComponentsInChildren<Renderer>();
         }
         previousMaterials = new Material[renderers.Length];
         for (int i = 0; i < renderers.Length; ++i)
@@ -48,11 +49,17 @@ public class Soldier : MonoBehaviour
         }
     }
 
-    public void PlayAnimation(string animationName)
+    public void PlayAnimation(string animationName, float min = 0, float max = 0)
     {
         if (anim != null)
         {
-            anim.Play(animationName);
+            StartCoroutine(PlayAnimationDelayed(animationName, min, max));
         }
+    }
+
+    IEnumerator PlayAnimationDelayed(string animationName, float min, float max)
+    {
+        yield return new WaitForSeconds(Random.Range(min, max));
+        anim.Play(animationName);
     }
 }

@@ -1,7 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.Events;
+﻿using UnityEngine;
+using UnityEngine.AI;
 
 public class Unit : MonoBehaviour {
     [SerializeField]
@@ -9,8 +7,18 @@ public class Unit : MonoBehaviour {
     private IUnitInput input;
     private UnitController controller;
 
-	// Use this for initialization
-	void Start () {
+    private NavMeshAgent agent;
+
+    [SerializeField]
+    RuntimeUnitSet RuntimeSet;
+
+    private void Awake()
+    {
+        agent = GetComponent<NavMeshAgent>();
+    }
+
+    // Use this for initialization
+    void Start () {
         Soldier[] soldiers = GetComponentsInChildren<Soldier>();
         if (unitData.IsAI == true)
         {
@@ -20,21 +28,27 @@ public class Unit : MonoBehaviour {
         {
             input = new PlayerUnitInput();
         }
-
-        switch(unitData.UnitType)
-        {
-            case UnitData.UnitTypeEnum.Spearman:
-                controller = new SpearmanUnitController(input, unitData, soldiers);
-                break;
-            case UnitData.UnitTypeEnum.Archer:
-                controller = new ArcherUnitController(input, unitData, soldiers);
-                break;
-        }
-        controller.Init();
+        controller = ControllerFactory.GetController(unitData.UnitName);
+        controller.Init(input, unitData, soldiers, this);
 	}
 	
 	void Update () {
         input.Tick();
         controller.Tick();
 	}
+
+    private void OnEnable()
+    {
+        RuntimeSet.Add(this);
+    }
+
+    private void OnDisable()
+    {
+        RuntimeSet.Remove(this);
+    }
+
+    public NavMeshAgent GetAgent()
+    {
+        return agent;
+    }
 }
