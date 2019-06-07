@@ -492,6 +492,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4781302456212534}
   - component: {fileID: 95549376589642932}
+  - component: {fileID: 114869762714998682}
   m_Layer: 0
   m_Name: Soldado base
   m_TagString: Untagged
@@ -971,7 +972,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1901675600957466}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.139, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4322597057081230}
@@ -1229,6 +1230,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114869762714998682
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1901675600957466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09e38847aaafc684fbd7806bc78c3b2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 0}
+  renderers: []
+  selectedMaterial: {fileID: 2100000, guid: ccec4e1a946129f498f08c7e3f1be0e7, type: 2}
 --- !u!137 &137787065745154072
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

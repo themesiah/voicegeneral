@@ -20,8 +20,6 @@ public class ShootingState : ScriptableState
         {
             s.PlayAnimation("disparo flecha", 0f, 0.3f);
         }
-        // Stop the target
-        TargetController.instance.StopTarget();
         // Calculate the force
         Vector3 point = TargetController.instance.GetPoint();
         ShotInfo shotInfo = CalculateForce(controller, controller.Unit.transform.position, point);
@@ -73,7 +71,7 @@ public class ShootingState : ScriptableState
 
     IEnumerator SpawnDamage(UnitController controller, Vector3 target, ShotInfo shotInfo)
     {
-        yield return new WaitForSeconds(shotInfo.time-0.3f);
+        yield return new WaitForSeconds(shotInfo.time-1f);
         Instantiate(controller.Data.AreaDamage, target, Quaternion.identity);
     }
 }

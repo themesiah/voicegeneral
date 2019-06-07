@@ -8,6 +8,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72ced06dddede3d46b0e91feb1b9aef1, type: 3}
-  m_Name: UnitDie
-  m_EditorClassIdentifier: Assembly-CSharp::GameEvent
+  m_Script: {fileID: 11500000, guid: 75462cbda097dde4396891849a3c73f7, type: 3}
+  m_Name: GenericValidMovement
+  m_EditorClassIdentifier: 
+  mask:
+    serializedVersion: 2
+    m_Bits: 512

@@ -19,6 +19,9 @@ public abstract class UnitController
     private static bool unselectedThisFrame = false;
     protected Dictionary<string, UnityAction<string>> actions;
 
+    static Dictionary<string, int> UNIT_NUMBERS = new Dictionary<string, int>();
+    private int unitNumber = 0;
+
     public void Init(IUnitInput i, UnitData d, List<Soldier> s, Unit u)
     {
         actions = new Dictionary<string, UnityAction<string>>();
@@ -29,6 +32,15 @@ public abstract class UnitController
         selected = false;
         unselect += Unselect;
 
+        if (!data.IsAI)
+        {
+            if (!UNIT_NUMBERS.ContainsKey(Name))
+            {
+                UNIT_NUMBERS.Add(Name, 0);
+            }
+            unitNumber = ++UNIT_NUMBERS[Name];
+        }
+
         actions.Add(data.UnitName, Select);
         foreach (var action in Alias.GetWords())
         {
@@ -36,7 +48,10 @@ public abstract class UnitController
             {
                 actions.Add(action, Select);
             }
-            else
+            else if (action == "uno" || action == "dos" || action == "tres" || action == "cuatro" || action == "cinco")
+            {
+                actions.Add(action, Subselect);
+            } else
             {
                 actions.Add(action, Message);
             }
@@ -66,6 +81,33 @@ public abstract class UnitController
                 s.SetSelectedMaterial();
             }
             selected = true;
+        }
+    }
+
+    private void Subselect(string num)
+    {
+        int intNum = 0;
+        switch (num)
+        {
+            case "uno":
+                intNum = 1;
+                break;
+            case "dos":
+                intNum = 2;
+                break;
+            case "tres":
+                intNum = 3;
+                break;
+            case "cuatro":
+                intNum = 4;
+                break;
+            case "cinco":
+                intNum = 5;
+                break;
+        }
+        if (selected == true && intNum == unitNumber)
+        {
+            Select(Name);
         }
     }
     

@@ -16,6 +16,8 @@ public class TargetController : MonoBehaviour {
     private bool isTargeting;
     private Vector3 lastPoint = Vector3.zero;
 
+    int stack = 0;
+
     private void Awake()
     {
         instance = this;
@@ -28,13 +30,18 @@ public class TargetController : MonoBehaviour {
     public void StartTarget()
     {
         isTargeting = true;
+        stack++;
         //target.SetActive(true);
     }
 
     public void StopTarget()
     {
-        isTargeting = false;
-        target.gameObject.SetActive(false);
+        stack--;
+        if (stack == 0)
+        {
+            isTargeting = false;
+            target.gameObject.SetActive(false);
+        }
     }
 
     public bool IsTargeting()

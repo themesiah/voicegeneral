@@ -19,5 +19,4 @@ MonoBehaviour:
   - message: Fire
     state: {fileID: 11400000, guid: 070e673587e0f87429f18b4e6229d332, type: 2}
     extraCondition: {fileID: 11400000, guid: fff339c91d6d3f242a40cec8b5ed3777, type: 2}
-  maxAngle: 30
-  maxDistance: 70
+  aimCondition: {fileID: 11400000, guid: fff339c91d6d3f242a40cec8b5ed3777, type: 2}

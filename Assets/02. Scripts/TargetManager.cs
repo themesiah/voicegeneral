@@ -10,21 +10,36 @@ public class TargetManager : MonoBehaviour {
 
     bool isValid = false;
 
+    bool validSignal = false;
+    bool invalidSignal = false;
+
     public void SetValidTarget(bool valid)
     { 
-        if (isValid != valid)
+        isValid = valid;
+        if (valid == true)
         {
-            isValid = valid;
-            if (valid == true)
-            {
-                particlesCan.SetActive(true);
-                particlesCant.SetActive(false);
-            } else
-            {
-                particlesCan.SetActive(false);
-                particlesCant.SetActive(true);
-            }
+            particlesCan.SetActive(true);
+            validSignal = true;
+        } else
+        {
+            particlesCant.SetActive(true);
+            invalidSignal = true;
         }
+    }
+
+    private void LateUpdate()
+    {
+        if (!validSignal)
+        {
+            particlesCan.SetActive(false);
+        }
+        if (!invalidSignal)
+        {
+            particlesCant.SetActive(false);
+        }
+        
+        invalidSignal = false;
+        validSignal = false;
     }
 
     public bool IsValidTarget()

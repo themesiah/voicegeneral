@@ -14,6 +14,11 @@ MonoBehaviour:
   unitName: Spearmen
   unitType: 0
   isAI: 0
-  firstState: {fileID: 0}
+  firstState: {fileID: 11400000, guid: df1524eb4f800d04eb7e80a037ec4776, type: 2}
   minMaxPreparationDelay: {x: 0, y: 0}
   preparationEnd: 0
+  maxAngle: 0
+  maxDistance: 0
+  projectilePrefab: {fileID: 0}
+  projectileForce: 0
+  areaDamage: {fileID: 0}

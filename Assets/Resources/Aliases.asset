@@ -36,3 +36,13 @@ MonoBehaviour:
     order: Archers
   - alias: lanceros
     order: Spearmen
+  - alias: uno
+    order: One
+  - alias: dos
+    order: Two
+  - alias: tres
+    order: three
+  - alias: cuatro
+    order: four
+  - alias: cinco
+    order: five

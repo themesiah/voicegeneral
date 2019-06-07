@@ -8,6 +8,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72ced06dddede3d46b0e91feb1b9aef1, type: 3}
-  m_Name: UnitDie
-  m_EditorClassIdentifier: Assembly-CSharp::GameEvent
+  m_Script: {fileID: 11500000, guid: 1376c425ccce1b84ea824205907d7781, type: 3}
+  m_Name: EnemyUnits
+  m_EditorClassIdentifier: 
+  Items: []

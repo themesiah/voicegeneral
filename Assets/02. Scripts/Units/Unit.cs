@@ -8,7 +8,8 @@ public class Unit : MonoBehaviour {
     private UnitData unitData;
     private IUnitInput input;
     private UnitController controller;
-    private Health health;
+    [HideInInspector]
+    public Health health;
     private NavMeshAgent agent;
     private List<Soldier> soldiers;
     private int startingSoldiers;
@@ -75,7 +76,7 @@ public class Unit : MonoBehaviour {
             int index = Random.Range(0, soldiers.Count);
             Soldier s = soldiers[index];
             soldiers.Remove(s);
-            s.PlayAnimation("muerte", 0f, 0.5f);
+            s.PlayAnimation("muerte", 0f, 0.3f);
 #if UNITY_EDITOR
             Destroy(s.gameObject, 5f);
 #endif
