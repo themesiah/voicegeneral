@@ -22,4 +22,7 @@ MonoBehaviour:
   - message: Shields
     state: {fileID: 11400000, guid: 6f87083a99bd5d140a8232d1f0b8c00a, type: 2}
     extraCondition: {fileID: 0}
+  - message: Attack
+    state: {fileID: 11400000, guid: ee1570b84d8d99b41a5b362e08f93aeb, type: 2}
+    extraCondition: {fileID: 0}
   aimCondition: {fileID: 11400000, guid: 35a952306f226b743b46922b2d2b71e0, type: 2}

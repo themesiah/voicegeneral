@@ -23,7 +23,7 @@ public class AreaDamage : MonoBehaviour
             if (distance < radius)
             {
                 float value = 1f - Mathf.InverseLerp(0f, radius, distance);
-                int finalDamage = (int)(value * damage);
+                float finalDamage = value * damage;
                 d.TakeDamage(finalDamage, damageType);
             }
         }

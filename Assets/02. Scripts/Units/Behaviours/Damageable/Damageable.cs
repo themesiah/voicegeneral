@@ -34,9 +34,9 @@ public abstract class Damageable : MonoBehaviour
         return !ignoreTypes.Contains(type);
     }
 
-    public abstract void CalculateDamage(int damage);
+    public abstract void CalculateDamage(float damage);
 
-    public void TakeDamage(int damage, DamageTypes type)
+    public void TakeDamage(float damage, DamageTypes type)
     {
         if (CanDamage(type))
         {

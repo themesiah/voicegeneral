@@ -11,11 +11,14 @@ public class Unit : MonoBehaviour {
     [HideInInspector]
     public Health health;
     private NavMeshAgent agent;
-    private List<Soldier> soldiers;
+    public List<Soldier> soldiers;
     private int startingSoldiers;
 
     [SerializeField]
-    RuntimeUnitSet RuntimeSet;
+    private RuntimeUnitSet allySet;
+    public RuntimeUnitSet enemySet;
+
+    private Unit engagedWith = null;
 
     private void Awake()
     {
@@ -28,6 +31,10 @@ public class Unit : MonoBehaviour {
     // Use this for initialization
     void Start () {
         soldiers = GetComponentsInChildren<Soldier>().ToList();
+        foreach(Soldier s in soldiers)
+        {
+            s.unit = this;
+        }
         startingSoldiers = soldiers.Count;
         if (unitData.IsAI == true)
         {
@@ -52,12 +59,12 @@ public class Unit : MonoBehaviour {
 
     private void OnEnable()
     {
-        RuntimeSet.Add(this);
+        allySet.Add(this);
     }
 
     private void OnDisable()
     {
-        RuntimeSet.Remove(this);
+        allySet.Remove(this);
     }
 
     public NavMeshAgent GetAgent()
@@ -65,10 +72,10 @@ public class Unit : MonoBehaviour {
         return agent;
     }
 
-    private void OnDamage(int damage, int health, int maxHealth)
+    private void OnDamage(float damage, float health, float maxHealth)
     {
         health = Mathf.Clamp(health, 0, maxHealth);
-        float percent = (float)health / (float)maxHealth;
+        float percent = health / maxHealth;
         int targetSoldierQuantity = (int)(percent * startingSoldiers);
         int toKill = soldiers.Count - targetSoldierQuantity;
         for (int i = 0; i < toKill; ++i)
@@ -76,7 +83,7 @@ public class Unit : MonoBehaviour {
             int index = Random.Range(0, soldiers.Count);
             Soldier s = soldiers[index];
             soldiers.Remove(s);
-            s.PlayAnimation("muerte", 0f, 0.3f);
+            s.Die();
 #if UNITY_EDITOR
             Destroy(s.gameObject, 5f);
 #endif
@@ -87,5 +94,32 @@ public class Unit : MonoBehaviour {
     private void OnDie()
     {
         Destroy(gameObject);
+    }
+
+    public void Engage(Unit enemy)
+    {
+        engagedWith = enemy;
+        /*if (enemy.GetEngaged() == null)
+        {
+            enemy.Engage(this);
+        }*/
+        foreach(Soldier s in soldiers)
+        {
+            s.Engage(enemy);
+        }
+    }
+
+    public void Disengage()
+    {
+        engagedWith = null;
+        foreach (Soldier s in soldiers)
+        {
+            s.Disengage();
+        }
+    }
+
+    public Unit GetEngaged()
+    {
+        return engagedWith;
     }
 }

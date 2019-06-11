@@ -8,20 +8,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ababc1f20f547d45a9e9f7e7664cae3, type: 3}
-  m_Name: SpearmenMove
+  m_Script: {fileID: 11500000, guid: 1fc8e581efe1c9343b8f4555af848c7c, type: 3}
+  m_Name: SpearmenBattle
   m_EditorClassIdentifier: 
   transitions:
-  - condition: {fileID: 11400000, guid: 0c4d567d704de6d4e8422349ca85a11b, type: 2}
+  - condition: {fileID: 11400000, guid: 8f5b722354951544dbda58b0bc356914, type: 2}
     trueState: {fileID: 11400000, guid: df1524eb4f800d04eb7e80a037ec4776, type: 2}
     falseState: {fileID: 0}
   messageTransitions:
   - message: Wait
     state: {fileID: 11400000, guid: df1524eb4f800d04eb7e80a037ec4776, type: 2}
     extraCondition: {fileID: 0}
-  - message: Shields
-    state: {fileID: 11400000, guid: 6f87083a99bd5d140a8232d1f0b8c00a, type: 2}
-    extraCondition: {fileID: 0}
-  - message: Attack
-    state: {fileID: 11400000, guid: ee1570b84d8d99b41a5b362e08f93aeb, type: 2}
+  - message: Move
+    state: {fileID: 11400000, guid: 21af47fef8923e84ca8a061def256745, type: 2}
     extraCondition: {fileID: 0}

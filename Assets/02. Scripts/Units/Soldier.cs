@@ -11,8 +11,20 @@ public class Soldier : MonoBehaviour
     [SerializeField]
     private Material selectedMaterial;
 
+    public Unit unit;
+
+    private Unit engagedTo;
+    private bool engaged;
+    private Soldier currentTarget;
+
+    private Vector3 originalPosition;
+    private Quaternion originalRotation;
+    private bool dead = false;
+
     void Start()
     {
+        originalPosition = transform.localPosition;
+        originalRotation = transform.rotation;
         if (anim == null)
         {
             anim = GetComponentInChildren<Animator>();
@@ -26,11 +38,6 @@ public class Soldier : MonoBehaviour
         {
             previousMaterials[i] = renderers[i].material;
         }
-    }
-
-    void Update()
-    {
-
     }
 
     public void SetSelectedMaterial()
@@ -61,5 +68,71 @@ public class Soldier : MonoBehaviour
     {
         yield return new WaitForSeconds(Random.Range(min, max));
         anim.Play(animationName);
+    }
+
+    public void Die()
+    {
+        dead = true;
+        PlayAnimation("muerte", 0f, 0.3f);
+    }
+
+    public bool IsDead()
+    {
+        return dead;
+    }
+
+    public void Engage(Unit enemy)
+    {
+        engagedTo = enemy;
+        currentTarget = GetTarget();
+        engaged = true;
+    }
+
+    public void Disengage()
+    {
+        engagedTo = null;
+        currentTarget = null;
+        engaged = false;
+    }
+
+    private Soldier GetTarget()
+    {
+        int enemies = engagedTo.soldiers.Count;
+        if (enemies == 0)
+        {
+            return null;
+        }
+        int me = unit.soldiers.IndexOf(this);
+        int target = me % enemies;
+        return engagedTo.soldiers[target];
+    }
+
+    private void Update()
+    {
+        if (dead == false)
+        {
+            if (engaged == true)
+            {
+                if (currentTarget == null || currentTarget.IsDead())
+                {
+                    currentTarget = GetTarget();
+                }
+                if (currentTarget != null)
+                {
+                    Vector3 pos = Vector3.MoveTowards(transform.position, currentTarget.transform.position + currentTarget.transform.forward, 5f * Time.deltaTime);
+                    transform.position = pos;
+                    transform.rotation = Quaternion.LookRotation(currentTarget.transform.position - transform.position, Vector3.up);
+                }
+            }
+            else
+            {
+                if (transform.localPosition != originalPosition)
+                {
+                    Vector3 pos = Vector3.MoveTowards(transform.localPosition, originalPosition, 5f * Time.deltaTime);
+                    transform.localPosition = pos;
+                    transform.rotation = originalRotation;
+                }
+            }
+        }
     }
 }

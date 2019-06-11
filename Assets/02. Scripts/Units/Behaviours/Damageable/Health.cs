@@ -6,10 +6,10 @@ using UnityEngine.Events;
 public class Health : Damageable
 {
     [SerializeField]
-    private int maxHealth;
-    private int health;
+    private float maxHealth;
+    private float health;
 
-    public UnityAction<int, int, int> OnDamage = delegate { };
+    public UnityAction<float, float, float> OnDamage = delegate { };
     public UnityAction OnDie = delegate { };
 
     void Start()
@@ -17,7 +17,7 @@ public class Health : Damageable
         health = maxHealth;
     }
 
-    public override void CalculateDamage(int damage)
+    public override void CalculateDamage(float damage)
     {
         health -= damage;
         OnDamage(damage, health, maxHealth);

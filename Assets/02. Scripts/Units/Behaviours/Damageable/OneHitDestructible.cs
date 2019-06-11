@@ -16,7 +16,7 @@ public class OneHitDestructible : Damageable
         }
     }
 
-    public override void CalculateDamage(int damage)
+    public override void CalculateDamage(float damage)
     {
         events[0].Invoke();
         events.RemoveAt(0);

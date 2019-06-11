@@ -11,6 +11,7 @@ public class MoveState : ScriptableState
         // Set destination
         Vector3 targetPosition = TargetController.instance.GetPoint();
         NavMeshAgent nma = controller.Unit.GetComponent<NavMeshAgent>();
+        nma.enabled = true;
         nma.SetDestination(targetPosition);
         nma.isStopped = false;
 
@@ -30,6 +31,7 @@ public class MoveState : ScriptableState
     {
         NavMeshAgent nma = controller.Unit.GetComponent<NavMeshAgent>();
         nma.isStopped = true;
+        nma.enabled = false;
     }
 
     public override void OnTick(UnitController controller)

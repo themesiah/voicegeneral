@@ -32,6 +32,14 @@ MonoBehaviour:
     order: Shields
   - alias: "c\xFAbranse"
     order: Shields
+  - alias: ataquen
+    order: Attack
+  - alias: atacad
+    order: Attack
+  - alias: luchad
+    order: Attack
+  - alias: luchen
+    order: Attack
   - alias: arqueros
     order: Archers
   - alias: lanceros

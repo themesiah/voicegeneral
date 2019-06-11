@@ -46,4 +46,15 @@ public class UnitData : ScriptableObject {
     private GameObject areaDamage;
     public GameObject AreaDamage { get { return areaDamage; } }
 
+    [Header("Melee specifics")]
+    [SerializeField]
+    private float attackAngle;
+    public float AttackAngle { get { return attackAngle; } }
+    [SerializeField]
+    private float attackDistance;
+    public float AttackDistance { get { return attackDistance; } }
+    [SerializeField]
+    private float damagePerSecond;
+    public float DamagePerSecond { get { return damagePerSecond; } }
+
 }

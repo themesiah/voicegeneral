@@ -22,3 +22,6 @@ MonoBehaviour:
   projectilePrefab: {fileID: 0}
   projectileForce: 0
   areaDamage: {fileID: 0}
+  attackAngle: 180
+  attackDistance: 10
+  damagePerSecond: 5
