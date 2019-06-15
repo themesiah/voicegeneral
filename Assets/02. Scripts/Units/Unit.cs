@@ -14,15 +14,21 @@ public class Unit : MonoBehaviour {
     public List<Soldier> soldiers;
     private int startingSoldiers;
 
+    [Header("Sets")]
     [SerializeField]
     private RuntimeUnitSet allySet;
     public RuntimeUnitSet enemySet;
+
+    [Header("Event listeners")]
+    public StateEvent StateChangeEvent;
+
 
     private Unit engagedWith = null;
 
     private void Awake()
     {
         agent = GetComponent<NavMeshAgent>();
+        agent.speed = unitData.MovementSpeed;
         health = GetComponent<Health>();
         health.OnDamage += OnDamage;
         health.OnDie += OnDie;
@@ -103,19 +109,21 @@ public class Unit : MonoBehaviour {
         {
             enemy.Engage(this);
         }*/
-        foreach(Soldier s in soldiers)
+        /*foreach(Soldier s in soldiers)
         {
             s.Engage(enemy);
-        }
+        }*/
+        transform.rotation = Quaternion.LookRotation(engagedWith.transform.position - transform.position, Vector3.up);
+        transform.position = engagedWith.transform.position + engagedWith.transform.forward * (engagedWith.unitData.Depth + unitData.Depth);
     }
 
     public void Disengage()
     {
         engagedWith = null;
-        foreach (Soldier s in soldiers)
+        /*foreach (Soldier s in soldiers)
         {
             s.Disengage();
-        }
+        }*/
     }
 
     public Unit GetEngaged()

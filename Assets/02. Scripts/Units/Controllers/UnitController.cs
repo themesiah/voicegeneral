@@ -81,6 +81,7 @@ public abstract class UnitController
                 s.SetSelectedMaterial();
             }
             selected = true;
+            unit.StateChangeEvent.Raise(currentState);
         }
     }
 
@@ -152,6 +153,7 @@ public abstract class UnitController
         newState.OnEnterState(this);
         currentState = newState;
         sinceState = Time.time;
+        unit.StateChangeEvent.Raise(newState);
         Debug.Log("Entering state " + newState.name);
     }
     #endregion

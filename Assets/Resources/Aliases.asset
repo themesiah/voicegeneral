@@ -40,6 +40,10 @@ MonoBehaviour:
     order: Attack
   - alias: luchen
     order: Attack
+  - alias: cargad
+    order: Charge
+  - alias: carguen
+    order: Charge
   - alias: arqueros
     order: Archers
   - alias: lanceros

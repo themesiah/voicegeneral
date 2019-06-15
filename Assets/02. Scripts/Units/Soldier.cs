@@ -10,16 +10,21 @@ public class Soldier : MonoBehaviour
     private Material[] previousMaterials;
     [SerializeField]
     private Material selectedMaterial;
-
+    [HideInInspector]
     public Unit unit;
 
     private Unit engagedTo;
     private bool engaged;
-    private Soldier currentTarget;
+    //private Soldier currentTarget;
+    
 
     private Vector3 originalPosition;
     private Quaternion originalRotation;
     private bool dead = false;
+    
+    private static float distanceToTarget = -20f;
+
+    private Coroutine animationCoroutine;
 
     void Start()
     {
@@ -60,7 +65,11 @@ public class Soldier : MonoBehaviour
     {
         if (anim != null)
         {
-            StartCoroutine(PlayAnimationDelayed(animationName, min, max));
+            if (animationCoroutine != null)
+            {
+                StopCoroutine(animationCoroutine);
+            }
+            animationCoroutine = StartCoroutine(PlayAnimationDelayed(animationName, min, max));
         }
     }
 
@@ -68,6 +77,7 @@ public class Soldier : MonoBehaviour
     {
         yield return new WaitForSeconds(Random.Range(min, max));
         anim.Play(animationName);
+        animationCoroutine = null;
     }
 
     public void Die()
@@ -81,58 +91,7 @@ public class Soldier : MonoBehaviour
         return dead;
     }
 
-    public void Engage(Unit enemy)
-    {
-        engagedTo = enemy;
-        currentTarget = GetTarget();
-        engaged = true;
-    }
-
-    public void Disengage()
-    {
-        engagedTo = null;
-        currentTarget = null;
-        engaged = false;
-    }
-
-    private Soldier GetTarget()
-    {
-        int enemies = engagedTo.soldiers.Count;
-        if (enemies == 0)
-        {
-            return null;
-        }
-        int me = unit.soldiers.IndexOf(this);
-        int target = me % enemies;
-        return engagedTo.soldiers[target];
-    }
-
     private void Update()
     {
-        if (dead == false)
-        {
-            if (engaged == true)
-            {
-                if (currentTarget == null || currentTarget.IsDead())
-                {
-                    currentTarget = GetTarget();
-                }
-                if (currentTarget != null)
-                {
-                    Vector3 pos = Vector3.MoveTowards(transform.position, currentTarget.transform.position + currentTarget.transform.forward, 5f * Time.deltaTime);
-                    transform.position = pos;
-                    transform.rotation = Quaternion.LookRotation(currentTarget.transform.position - transform.position, Vector3.up);
-                }
-            }
-            else
-            {
-                if (transform.localPosition != originalPosition)
-                {
-                    Vector3 pos = Vector3.MoveTowards(transform.localPosition, originalPosition, 5f * Time.deltaTime);
-                    transform.localPosition = pos;
-                    transform.rotation = originalRotation;
-                }
-            }
-        }
     }
 }

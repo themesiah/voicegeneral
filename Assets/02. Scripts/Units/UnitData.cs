@@ -23,6 +23,17 @@ public class UnitData : ScriptableObject {
     public bool IsAI { get { return isAI; } }
     public ScriptableState FirstState { get { return firstState; } }
 
+    [SerializeField]
+    private float depth;
+    public float Depth { get { return depth; } }
+    [SerializeField]
+    private float movementSpeed;
+    public float MovementSpeed { get { return movementSpeed; } }
+    [SerializeField]
+    private float chargeSpeed;
+    public float ChargeSpeed { get { return chargeSpeed; } }
+
+
     [Header("Distance specifics")]
     [SerializeField]
     private Vector2 minMaxPreparationDelay;

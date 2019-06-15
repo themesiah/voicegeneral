@@ -2,3 +2,8 @@ X Target controller con múltiples unidades
 X Diferente comprobación de target controller dependiendo de si es movimiento
 X Uno, Dos, Tres... para seleccionar diferentes unidades del mismo tipo
 X State machine de los lanceros
+X Sistema de combate básico
+
+- Condiciones de victoria
+- Dialogo
+- Menu principal

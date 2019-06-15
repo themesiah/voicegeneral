@@ -15,6 +15,9 @@ MonoBehaviour:
   unitType: 1
   isAI: 1
   firstState: {fileID: 11400000, guid: 3373f0735474f9a41830f9a8004080de, type: 2}
+  depth: 3
+  movementSpeed: 3.5
+  chargeSpeed: 5
   minMaxPreparationDelay: {x: 0.2, y: 1.1}
   preparationEnd: 3
   maxAngle: 30
@@ -23,3 +26,6 @@ MonoBehaviour:
     type: 2}
   projectileForce: 20
   areaDamage: {fileID: 1457267969757374, guid: 106bf8659bb93d041a74e78fda794f72, type: 2}
+  attackAngle: 180
+  attackDistance: 10
+  damagePerSecond: 2

@@ -22,3 +22,6 @@ MonoBehaviour:
   - message: Attack
     state: {fileID: 11400000, guid: ee1570b84d8d99b41a5b362e08f93aeb, type: 2}
     extraCondition: {fileID: 0}
+  - message: Charge
+    state: {fileID: 11400000, guid: b43c8a32004aff54f99fbd38f72b0e52, type: 2}
+    extraCondition: {fileID: 0}

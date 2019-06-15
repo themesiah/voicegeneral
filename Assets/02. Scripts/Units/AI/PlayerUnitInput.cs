@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -60,6 +59,9 @@ public class PlayerUnitInput : IUnitInput
         } else if (Input.GetKeyDown(KeyCode.E))
         {
             DoAction("ataquen");
+        } else if (Input.GetKeyDown(KeyCode.Z))
+        {
+            DoAction("carguen");
         }
 #endif
     }

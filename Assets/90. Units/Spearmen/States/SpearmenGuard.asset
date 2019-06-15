@@ -19,3 +19,6 @@ MonoBehaviour:
   - message: Move
     state: {fileID: 11400000, guid: 21af47fef8923e84ca8a061def256745, type: 2}
     extraCondition: {fileID: 0}
+  - message: Charge
+    state: {fileID: 11400000, guid: b43c8a32004aff54f99fbd38f72b0e52, type: 2}
+    extraCondition: {fileID: 0}
