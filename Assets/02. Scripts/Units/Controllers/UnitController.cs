@@ -81,7 +81,7 @@ public abstract class UnitController
                 s.SetSelectedMaterial();
             }
             selected = true;
-            unit.StateChangeEvent.Raise(currentState);
+            unit.selectedSet.Add(unit);
         }
     }
 
@@ -130,6 +130,7 @@ public abstract class UnitController
                 s.UnsetSelectedMaterial();
             }
             selected = false;
+            unit.selectedSet.Remove(unit);
         }
     }
 
@@ -144,6 +145,8 @@ public abstract class UnitController
         return Time.time - sinceState;
     }
 
+    public ScriptableState CurrentState { get { return currentState; } }
+
     public abstract string Name { get; }
 
     #region State Machine
@@ -153,7 +156,6 @@ public abstract class UnitController
         newState.OnEnterState(this);
         currentState = newState;
         sinceState = Time.time;
-        unit.StateChangeEvent.Raise(newState);
         Debug.Log("Entering state " + newState.name);
     }
     #endregion

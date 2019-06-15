@@ -242,7 +242,7 @@ MonoBehaviour:
   soldiers: []
   allySet: {fileID: 11400000, guid: 7df63c8a4e5f3d04c81c6b7131e245dc, type: 2}
   enemySet: {fileID: 11400000, guid: 3efb7d8270c5420449f219c0a5bb92e8, type: 2}
-  StateChangeEvent: {fileID: 0}
+  selectedSet: {fileID: 11400000, guid: c3645331f3f5ba04cbb6d787b212e527, type: 2}
 --- !u!4 &4666229
 Transform:
   m_ObjectHideFlags: 0
@@ -1160,7 +1160,7 @@ MonoBehaviour:
   soldiers: []
   allySet: {fileID: 11400000, guid: 3efb7d8270c5420449f219c0a5bb92e8, type: 2}
   enemySet: {fileID: 11400000, guid: 7df63c8a4e5f3d04c81c6b7131e245dc, type: 2}
-  StateChangeEvent: {fileID: 11400000, guid: f7ef7ca5e5cd91a498ecd2f7ad3094dd, type: 2}
+  selectedSet: {fileID: 11400000, guid: c3645331f3f5ba04cbb6d787b212e527, type: 2}
 --- !u!4 &63066610
 Transform:
   m_ObjectHideFlags: 0
@@ -1895,63 +1895,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4781302456212534, guid: 988af0f97f5dc6b418ef711242508c42,
     type: 2}
   m_PrefabInternal: {fileID: 94796032}
---- !u!1 &98890812
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 98890814}
-  - component: {fileID: 98890813}
-  m_Layer: 0
-  m_Name: StateEventListener
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &98890813
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 98890812}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5bb0839c7665d1040ab3c65cd94c2f70, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Event: {fileID: 11400000, guid: f7ef7ca5e5cd91a498ecd2f7ad3094dd, type: 2}
-  Response:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1771510183}
-        m_MethodName: ChangeState
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: StateEventListener+CustomEvent, Assembly-CSharp, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
---- !u!4 &98890814
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 98890812}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.5582075, y: 12.514641, z: 51.064472}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 12
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &101468179
 GameObject:
   m_ObjectHideFlags: 0
@@ -8866,7 +8809,7 @@ MonoBehaviour:
   soldiers: []
   allySet: {fileID: 11400000, guid: 7df63c8a4e5f3d04c81c6b7131e245dc, type: 2}
   enemySet: {fileID: 11400000, guid: 3efb7d8270c5420449f219c0a5bb92e8, type: 2}
-  StateChangeEvent: {fileID: 0}
+  selectedSet: {fileID: 11400000, guid: c3645331f3f5ba04cbb6d787b212e527, type: 2}
 --- !u!4 &484757662
 Transform:
   m_ObjectHideFlags: 0
@@ -15821,7 +15764,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &870344644
 GameObject:
@@ -33734,10 +33677,10 @@ RectTransform:
   m_Father: {fileID: 1792893707}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 30, y: -30}
-  m_SizeDelta: {x: 500, y: 50}
+  m_SizeDelta: {x: 500, y: -30}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1771510183
 MonoBehaviour:
@@ -33750,7 +33693,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdf2ea42b7220ed498a49efb74a36f48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stateText: {fileID: 0}
+  stateText: {fileID: 1771510185}
+  selectedUnitsSet: {fileID: 11400000, guid: c3645331f3f5ba04cbb6d787b212e527, type: 2}
 --- !u!114 &1771510184
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33791,13 +33735,13 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 3
     m_MaxSize: 40
-    m_Alignment: 3
+    m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Estado actual
+  m_Text: "<size=44>\xD3rdenes</size>"
 --- !u!222 &1771510186
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -34149,7 +34093,7 @@ RectTransform:
   m_Children:
   - {fileID: 1771510182}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -36514,7 +36458,7 @@ MonoBehaviour:
   soldiers: []
   allySet: {fileID: 11400000, guid: 7df63c8a4e5f3d04c81c6b7131e245dc, type: 2}
   enemySet: {fileID: 11400000, guid: 3efb7d8270c5420449f219c0a5bb92e8, type: 2}
-  StateChangeEvent: {fileID: 0}
+  selectedSet: {fileID: 11400000, guid: c3645331f3f5ba04cbb6d787b212e527, type: 2}
 --- !u!4 &1873702455
 Transform:
   m_ObjectHideFlags: 0
@@ -38451,7 +38395,7 @@ MonoBehaviour:
   soldiers: []
   allySet: {fileID: 11400000, guid: 3efb7d8270c5420449f219c0a5bb92e8, type: 2}
   enemySet: {fileID: 11400000, guid: 7df63c8a4e5f3d04c81c6b7131e245dc, type: 2}
-  StateChangeEvent: {fileID: 11400000, guid: f7ef7ca5e5cd91a498ecd2f7ad3094dd, type: 2}
+  selectedSet: {fileID: 11400000, guid: c3645331f3f5ba04cbb6d787b212e527, type: 2}
 --- !u!4 &1986750751
 Transform:
   m_ObjectHideFlags: 0
@@ -38781,7 +38725,7 @@ MonoBehaviour:
   soldiers: []
   allySet: {fileID: 11400000, guid: 3efb7d8270c5420449f219c0a5bb92e8, type: 2}
   enemySet: {fileID: 11400000, guid: 7df63c8a4e5f3d04c81c6b7131e245dc, type: 2}
-  StateChangeEvent: {fileID: 11400000, guid: f7ef7ca5e5cd91a498ecd2f7ad3094dd, type: 2}
+  selectedSet: {fileID: 11400000, guid: c3645331f3f5ba04cbb6d787b212e527, type: 2}
 --- !u!4 &2008942691
 Transform:
   m_ObjectHideFlags: 0

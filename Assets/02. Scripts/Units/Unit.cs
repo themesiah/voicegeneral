@@ -18,9 +18,9 @@ public class Unit : MonoBehaviour {
     [SerializeField]
     private RuntimeUnitSet allySet;
     public RuntimeUnitSet enemySet;
+    public RuntimeUnitSet selectedSet;
 
     [Header("Event listeners")]
-    public StateEvent StateChangeEvent;
 
 
     private Unit engagedWith = null;
@@ -71,11 +71,17 @@ public class Unit : MonoBehaviour {
     private void OnDisable()
     {
         allySet.Remove(this);
+        selectedSet.Remove(this);
     }
 
     public NavMeshAgent GetAgent()
     {
         return agent;
+    }
+
+    public ScriptableState GetState()
+    {
+        return controller.CurrentState;
     }
 
     private void OnDamage(float damage, float health, float maxHealth)

@@ -8,6 +8,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67f11dfc2e03f244dac88facfc6b2b6f, type: 3}
-  m_Name: StateEvent
+  m_Script: {fileID: 11500000, guid: 1376c425ccce1b84ea824205907d7781, type: 3}
+  m_Name: SelectedUnits
   m_EditorClassIdentifier: 
+  Items: []

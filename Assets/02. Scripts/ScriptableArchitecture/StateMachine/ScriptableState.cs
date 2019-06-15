@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
 public abstract class ScriptableState : ScriptableObject
 {
@@ -63,6 +64,16 @@ public abstract class ScriptableState : ScriptableObject
                 break;
             }
         }
+    }
+
+    public List<string> GetCommandsList()
+    {
+        List<string> commands = new List<string>();
+        foreach (var transition in messageTransitions)
+        {
+            commands.Add(transition.message);
+        }
+        return commands;
     }
 
     public abstract void OnEnterState(UnitController controller);

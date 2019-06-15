@@ -3,7 +3,13 @@ guid: f634ef201ef388a40b54c560ae90d6e2
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - unitData: {instanceID: 0}
+  - health: {instanceID: 0}
+  - allySet: {instanceID: 0}
+  - enemySet: {instanceID: 0}
+  - selectedSet: {fileID: 11400000, guid: c3645331f3f5ba04cbb6d787b212e527, type: 2}
+  - StateChangeEvent: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
