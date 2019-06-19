@@ -62,6 +62,9 @@ public class PlayerUnitInput : IUnitInput
         } else if (Input.GetKeyDown(KeyCode.Z))
         {
             DoAction("carguen");
+        } else if (Input.GetKeyDown(KeyCode.R))
+        {
+            DoAction("elefantes");
         }
 #endif
     }

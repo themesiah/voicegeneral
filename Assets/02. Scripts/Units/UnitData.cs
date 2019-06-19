@@ -7,7 +7,8 @@ public class UnitData : ScriptableObject {
     public enum UnitTypeEnum
     {
         Spearman,
-        Archer
+        Archer,
+        Elephant
     }
     [SerializeField]
     private string unitName;
@@ -67,5 +68,8 @@ public class UnitData : ScriptableObject {
     [SerializeField]
     private float damagePerSecond;
     public float DamagePerSecond { get { return damagePerSecond; } }
+    [SerializeField]
+    private float chargeDamage;
+    public float ChargeDamage { get { return chargeDamage; } }
 
 }

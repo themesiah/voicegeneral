@@ -29,4 +29,13 @@ public class AimState : ScriptableState
         TargetController.instance.ValidTarget(valid);
     }
 
+    public override void OnUnselect(UnitController controller)
+    {
+        controller.Input.StopPointer();
+    }
+
+    public override void OnSelect(UnitController controller)
+    {
+        controller.Input.StartPointer();
+    }
 }

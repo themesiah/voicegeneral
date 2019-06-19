@@ -3,7 +3,15 @@ X Diferente comprobación de target controller dependiendo de si es movimiento
 X Uno, Dos, Tres... para seleccionar diferentes unidades del mismo tipo
 X State machine de los lanceros
 X Sistema de combate básico
+X Condiciones de victoria
+X Menu principal (elegir batalla, creditos, tuto, salir)
+X Tuto
+X Arreglar elefantes
+X Quitar target cuando deseleccionas unidad
+X Mejorar snap de combate
 
-- Condiciones de victoria
-- Dialogo
-- Menu principal
+- Cambiar cosa de selección
+- IA
+- Diseñar niveles
+- Interprete mapas json
+- Carga de los elefantes rompe bosques

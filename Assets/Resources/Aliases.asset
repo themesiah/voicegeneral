@@ -48,6 +48,8 @@ MonoBehaviour:
     order: Archers
   - alias: lanceros
     order: Spearmen
+  - alias: elefantes
+    order: Elephants
   - alias: uno
     order: One
   - alias: dos

@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4aa5af0b9ec685a418af064b740bc818, type: 3}
+  m_Name: ElephantEngageState
+  m_EditorClassIdentifier: 
+  transitions:
+  - condition: {fileID: 11400000, guid: e1295ffdbf31a7b43a34f29aca434ee3, type: 2}
+    trueState: {fileID: 11400000, guid: 5ef79d411cfb0a94db2c6f5f53d3755c, type: 2}
+    falseState: {fileID: 11400000, guid: d636a1bcc6ba18d48a935394df043639, type: 2}
+  messageTransitions: []

@@ -1,0 +1,171 @@
+fileFormatVersion: 2
+guid: b5eb61a976934164f8ed890cfb34a903
+timeCreated: 1560878443
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: caseta elefante
+    100002: CATRigHub001
+    100004: CATRigHub002
+    100006: CATRigHub003
+    100008: CATRigLLeg1
+    100010: CATRigLLeg1 1
+    100012: CATRigLLeg2
+    100014: CATRigLLeg2 1
+    100016: CATRigLLegAnkle
+    100018: CATRigLLegAnkle 1
+    100020: CATRigLLegPlatform
+    100022: CATRigLLegPlatform 1
+    100024: CATRigoreja der
+    100026: CATRigoreja iz
+    100028: CATRigRLeg1
+    100030: CATRigRLeg1 1
+    100032: CATRigRLeg2
+    100034: CATRigRLeg2 1
+    100036: CATRigRLegAnkle
+    100038: CATRigRLegAnkle 1
+    100040: CATRigRLegPlatform
+    100042: CATRigRLegPlatform 1
+    100044: CATRigSpine1
+    100046: CATRigSpine1 1
+    100048: CATRigSpine2
+    100050: CATRigSpine2 1
+    100052: CATRigSpine3
+    100054: CATRigSpine3 1
+    100056: CATRigSpine4
+    100058: CATRigSpine4 1
+    100060: CATRigSpine5
+    100062: CATRigSpine5 1
+    100064: CATRigTail1
+    100066: CATRigTail1cola
+    100068: CATRigTail2
+    100070: CATRigTail2cola
+    100072: CATRigTail3
+    100074: CATRigTail3cola
+    100076: CATRigTail4
+    100078: CATRigTail4cola
+    100080: CATRigTail5
+    100082: CATRigTail5cola
+    100084: //RootNode
+    100086: Plane003
+    400000: caseta elefante
+    400002: CATRigHub001
+    400004: CATRigHub002
+    400006: CATRigHub003
+    400008: CATRigLLeg1
+    400010: CATRigLLeg1 1
+    400012: CATRigLLeg2
+    400014: CATRigLLeg2 1
+    400016: CATRigLLegAnkle
+    400018: CATRigLLegAnkle 1
+    400020: CATRigLLegPlatform
+    400022: CATRigLLegPlatform 1
+    400024: CATRigoreja der
+    400026: CATRigoreja iz
+    400028: CATRigRLeg1
+    400030: CATRigRLeg1 1
+    400032: CATRigRLeg2
+    400034: CATRigRLeg2 1
+    400036: CATRigRLegAnkle
+    400038: CATRigRLegAnkle 1
+    400040: CATRigRLegPlatform
+    400042: CATRigRLegPlatform 1
+    400044: CATRigSpine1
+    400046: CATRigSpine1 1
+    400048: CATRigSpine2
+    400050: CATRigSpine2 1
+    400052: CATRigSpine3
+    400054: CATRigSpine3 1
+    400056: CATRigSpine4
+    400058: CATRigSpine4 1
+    400060: CATRigSpine5
+    400062: CATRigSpine5 1
+    400064: CATRigTail1
+    400066: CATRigTail1cola
+    400068: CATRigTail2
+    400070: CATRigTail2cola
+    400072: CATRigTail3
+    400074: CATRigTail3cola
+    400076: CATRigTail4
+    400078: CATRigTail4cola
+    400080: CATRigTail5
+    400082: CATRigTail5cola
+    400084: //RootNode
+    400086: Plane003
+    2300000: caseta elefante
+    3300000: caseta elefante
+    4300000: Plane003
+    4300002: caseta elefante
+    9500000: //RootNode
+    13700000: Plane003
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

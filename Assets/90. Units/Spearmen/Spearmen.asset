@@ -28,3 +28,4 @@ MonoBehaviour:
   attackAngle: 180
   attackDistance: 10
   damagePerSecond: 5
+  chargeDamage: 20

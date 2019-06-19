@@ -34,6 +34,10 @@ public class BattleState : ScriptableState
         Transform t = controller.Unit.transform;
         foreach(Unit u in controller.Unit.enemySet.Items)
         {
+            if (u.GetEngaged() == controller.Unit)
+            {
+                return u;
+            }
             Transform te = u.transform;
             float dis = GetDistance(controller, t, te.position);
             if (dis < minDistance && CheckAngle(controller, t, te.position))

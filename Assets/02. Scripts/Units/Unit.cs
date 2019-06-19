@@ -14,6 +14,8 @@ public class Unit : MonoBehaviour {
     public List<Soldier> soldiers;
     private int startingSoldiers;
 
+    private Vector3 targetPosition;
+
     [Header("Sets")]
     [SerializeField]
     private RuntimeUnitSet allySet;
@@ -55,12 +57,26 @@ public class Unit : MonoBehaviour {
 	}
 	
 	void Update () {
+        if (GetEngaged() != null)
+        {
+            Move();
+        }
         input.Tick();
 	}
 
     private void LateUpdate()
     {
         controller.Tick();
+    }
+
+    private void Move()
+    {
+        transform.position = Vector3.MoveTowards(transform.position, targetPosition, unitData.ChargeSpeed * Time.deltaTime);
+        Vector3 newTargetPosition = engagedWith.transform.position - transform.forward * (engagedWith.unitData.Depth + unitData.Depth);
+        if (Vector3.Distance(newTargetPosition, targetPosition) > 1f)
+        {
+            targetPosition = newTargetPosition;
+        }
     }
 
     private void OnEnable()
@@ -105,31 +121,20 @@ public class Unit : MonoBehaviour {
 
     private void OnDie()
     {
+        controller.UnregisterUnselect();
         Destroy(gameObject);
     }
 
     public void Engage(Unit enemy)
     {
         engagedWith = enemy;
-        /*if (enemy.GetEngaged() == null)
-        {
-            enemy.Engage(this);
-        }*/
-        /*foreach(Soldier s in soldiers)
-        {
-            s.Engage(enemy);
-        }*/
         transform.rotation = Quaternion.LookRotation(engagedWith.transform.position - transform.position, Vector3.up);
-        transform.position = engagedWith.transform.position + engagedWith.transform.forward * (engagedWith.unitData.Depth + unitData.Depth);
+        targetPosition = engagedWith.transform.position - transform.forward * (engagedWith.unitData.Depth + unitData.Depth);
     }
 
     public void Disengage()
     {
         engagedWith = null;
-        /*foreach (Soldier s in soldiers)
-        {
-            s.Disengage();
-        }*/
     }
 
     public Unit GetEngaged()

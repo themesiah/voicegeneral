@@ -80,6 +80,10 @@ public abstract class UnitController
             {
                 s.SetSelectedMaterial();
             }
+            if (!selected)
+            {
+                currentState.OnSelect(this);
+            }
             selected = true;
             unit.selectedSet.Add(unit);
         }
@@ -129,9 +133,18 @@ public abstract class UnitController
             {
                 s.UnsetSelectedMaterial();
             }
+            if (selected)
+            {
+                currentState.OnUnselect(this);
+            }
             selected = false;
             unit.selectedSet.Remove(unit);
         }
+    }
+
+    public void UnregisterUnselect()
+    {
+        unselect -= Unselect;
     }
 
     public void Tick()

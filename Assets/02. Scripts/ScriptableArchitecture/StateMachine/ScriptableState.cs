@@ -79,5 +79,7 @@ public abstract class ScriptableState : ScriptableObject
     public abstract void OnEnterState(UnitController controller);
     public abstract void OnExitState(UnitController controller);
     public abstract void OnTick(UnitController controller);
+    public virtual void OnUnselect(UnitController controller){}
+    public virtual void OnSelect(UnitController controller){}
     
 }

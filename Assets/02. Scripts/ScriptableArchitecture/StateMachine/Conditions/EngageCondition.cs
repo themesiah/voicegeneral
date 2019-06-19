@@ -25,13 +25,18 @@ public class EngageCondition : ScriptableCondition
         return distance;
     }
 
+    private bool OtherEngaged(UnitController controller, Unit enemyUnit)
+    {
+        return enemyUnit.GetEngaged() == controller.Unit;
+    }
+
     public override bool CheckCondition(UnitController controller)
     {
         Transform t = controller.Unit.transform;
         foreach(Unit u in controller.Unit.enemySet.Items)
         {
             Transform te = u.transform;
-            if (CheckDistance(controller, t, te.position) && CheckAngle(controller, t, te.position))
+            if ((CheckDistance(controller, t, te.position) && CheckAngle(controller, t, te.position)) || OtherEngaged(controller, u))
             {
                 return true;
             }
