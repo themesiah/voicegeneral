@@ -4,24 +4,12 @@ using UnityEngine;
 
 [CreateAssetMenu(menuName = "Units/Units Data")]
 public class UnitData : ScriptableObject {
-    public enum UnitTypeEnum
-    {
-        Spearman,
-        Archer,
-        Elephant
-    }
     [SerializeField]
     private string unitName;
-    [SerializeField]
-    private UnitTypeEnum unitType;
-    [SerializeField]
-    private bool isAI;
     [SerializeField]
     private ScriptableState firstState;
     
     public string UnitName { get { return unitName; } }
-    public UnitTypeEnum UnitType { get { return unitType; } }
-    public bool IsAI { get { return isAI; } }
     public ScriptableState FirstState { get { return firstState; } }
 
     [SerializeField]

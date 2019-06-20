@@ -9,9 +9,11 @@ X Tuto
 X Arreglar elefantes
 X Quitar target cuando deseleccionas unidad
 X Mejorar snap de combate
+X Cambiar cosa de selección
 
-- Cambiar cosa de selección
 - IA
 - Diseñar niveles
 - Interprete mapas json
 - Carga de los elefantes rompe bosques
+- Añadir música (dependiendo del bando)
+- Añadir sonidos

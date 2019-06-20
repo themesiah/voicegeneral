@@ -6,10 +6,11 @@ MonoImporter:
   defaultReferences:
   - unitData: {instanceID: 0}
   - health: {instanceID: 0}
-  - allySet: {instanceID: 0}
+  - engageObject: {instanceID: 0}
+  - playerSet: {fileID: 11400000, guid: 3efb7d8270c5420449f219c0a5bb92e8, type: 2}
+  - iaSet: {fileID: 11400000, guid: 7df63c8a4e5f3d04c81c6b7131e245dc, type: 2}
   - enemySet: {instanceID: 0}
   - selectedSet: {fileID: 11400000, guid: c3645331f3f5ba04cbb6d787b212e527, type: 2}
-  - StateChangeEvent: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

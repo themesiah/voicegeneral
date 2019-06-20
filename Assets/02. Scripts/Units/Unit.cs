@@ -6,6 +6,7 @@ using System.Collections.Generic;
 public class Unit : MonoBehaviour {
     [SerializeField]
     private UnitData unitData;
+    public bool isAi;
     private IUnitInput input;
     private UnitController controller;
     [HideInInspector]
@@ -13,12 +14,19 @@ public class Unit : MonoBehaviour {
     private NavMeshAgent agent;
     public List<Soldier> soldiers;
     private int startingSoldiers;
+    [SerializeField]
+    private GameObject engageObject;
 
     private Vector3 targetPosition;
 
     [Header("Sets")]
     [SerializeField]
+    private RuntimeUnitSet playerSet;
+    [SerializeField]
+    private RuntimeUnitSet iaSet;
+    
     private RuntimeUnitSet allySet;
+    [HideInInspector]
     public RuntimeUnitSet enemySet;
     public RuntimeUnitSet selectedSet;
 
@@ -44,13 +52,17 @@ public class Unit : MonoBehaviour {
             s.unit = this;
         }
         startingSoldiers = soldiers.Count;
-        if (unitData.IsAI == true)
+        if (isAi == true)
         {
             input = new AIUnitInput();
+            allySet = iaSet;
+            enemySet = playerSet;
         }
         else
         {
             input = new PlayerUnitInput();
+            allySet = playerSet;
+            enemySet = iaSet;
         }
         controller = ControllerFactory.GetController(unitData.UnitName);
         controller.Init(input, unitData, soldiers, this);
@@ -81,6 +93,16 @@ public class Unit : MonoBehaviour {
 
     private void OnEnable()
     {
+        if (isAi == true)
+        {
+            allySet = iaSet;
+            enemySet = playerSet;
+        }
+        else
+        {
+            allySet = playerSet;
+            enemySet = iaSet;
+        }
         allySet.Add(this);
     }
 
@@ -104,7 +126,7 @@ public class Unit : MonoBehaviour {
     {
         health = Mathf.Clamp(health, 0, maxHealth);
         float percent = health / maxHealth;
-        int targetSoldierQuantity = (int)(percent * startingSoldiers);
+        int targetSoldierQuantity = Mathf.RoundToInt(percent * startingSoldiers);
         int toKill = soldiers.Count - targetSoldierQuantity;
         for (int i = 0; i < toKill; ++i)
         {
@@ -130,11 +152,19 @@ public class Unit : MonoBehaviour {
         engagedWith = enemy;
         transform.rotation = Quaternion.LookRotation(engagedWith.transform.position - transform.position, Vector3.up);
         targetPosition = engagedWith.transform.position - transform.forward * (engagedWith.unitData.Depth + unitData.Depth);
+        if (engageObject != null)
+        {
+            engageObject.SetActive(true);
+        }
     }
 
     public void Disengage()
     {
         engagedWith = null;
+        if (engageObject != null)
+        {
+            engageObject.SetActive(false);
+        }
     }
 
     public Unit GetEngaged()

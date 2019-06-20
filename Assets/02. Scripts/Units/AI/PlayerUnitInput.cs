@@ -56,6 +56,9 @@ public class PlayerUnitInput : IUnitInput
         } else if (Input.GetKeyDown(KeyCode.Q))
         {
             DoAction("lanceros");
+        } else if (Input.GetKeyDown(KeyCode.X))
+        {
+            DoAction("escudos");
         } else if (Input.GetKeyDown(KeyCode.E))
         {
             DoAction("ataquen");

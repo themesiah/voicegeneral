@@ -32,7 +32,7 @@ public abstract class UnitController
         selected = false;
         unselect += Unselect;
 
-        if (!data.IsAI)
+        if (!unit.isAi)
         {
             if (!UNIT_NUMBERS.ContainsKey(Name))
             {
@@ -71,7 +71,7 @@ public abstract class UnitController
 
     private void Select(string message)
     {
-        if (data.IsAI == false)
+        if (unit.isAi == false)
         {
             unselect();
             unselectedThisFrame = true;
@@ -118,7 +118,7 @@ public abstract class UnitController
     
     protected void Message(string message)
     {
-        if (selected || data.IsAI)
+        if (selected || unit.isAi)
         {
             currentState.Message(this, message);
         }
@@ -126,7 +126,7 @@ public abstract class UnitController
 
     private void Unselect()
     {
-        if (data.IsAI == false && !unselectedThisFrame)
+        if (unit.isAi == false && !unselectedThisFrame)
         {
             Debug.Log("Unidad " + data.UnitName + " de game object " + unit.gameObject.name + " deseleccionada");
             foreach (Soldier s in soldiers)
