@@ -6,16 +6,9 @@ public class Soldier : MonoBehaviour
     [SerializeField]
     private Animator anim;
     [SerializeField]
-    private Renderer[] renderers;
-    private Material[] previousMaterials;
-    [SerializeField]
-    private Material selectedMaterial;
+    private GameObject selectionObject;
     [HideInInspector]
     public Unit unit;
-
-    private Unit engagedTo;
-    private bool engaged;
-    //private Soldier currentTarget;
     
 
     private Vector3 originalPosition;
@@ -34,30 +27,21 @@ public class Soldier : MonoBehaviour
         {
             anim = GetComponentInChildren<Animator>();
         }
-        if (renderers == null || renderers.Length == 0)
+    }
+
+    public void SetSelected()
+    {
+        if (selectionObject != null)
         {
-            renderers = GetComponentsInChildren<Renderer>();
-        }
-        previousMaterials = new Material[renderers.Length];
-        for (int i = 0; i < renderers.Length; ++i)
-        {
-            previousMaterials[i] = renderers[i].material;
+            selectionObject.SetActive(true);
         }
     }
 
-    public void SetSelectedMaterial()
+    public void SetUnselected()
     {
-        for (int i = 0; i < renderers.Length; ++i)
+        if (selectionObject != null)
         {
-            renderers[i].material = selectedMaterial;
-        }
-    }
-
-    public void UnsetSelectedMaterial()
-    {
-        for (int i = 0; i < renderers.Length; ++i)
-        {
-            renderers[i].material = previousMaterials[i];
+            selectionObject.SetActive(false);
         }
     }
 

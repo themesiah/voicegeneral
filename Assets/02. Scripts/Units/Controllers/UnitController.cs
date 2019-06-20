@@ -78,7 +78,7 @@ public abstract class UnitController
             Debug.Log("Unidad " + data.UnitName + " de game object " + unit.gameObject.name + " seleccionada");
             foreach (Soldier s in soldiers)
             {
-                s.SetSelectedMaterial();
+                s.SetSelected();
             }
             if (!selected)
             {
@@ -131,7 +131,7 @@ public abstract class UnitController
             Debug.Log("Unidad " + data.UnitName + " de game object " + unit.gameObject.name + " deseleccionada");
             foreach (Soldier s in soldiers)
             {
-                s.UnsetSelectedMaterial();
+                s.SetUnselected();
             }
             if (selected)
             {
