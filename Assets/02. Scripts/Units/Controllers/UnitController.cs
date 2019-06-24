@@ -19,7 +19,7 @@ public abstract class UnitController
     private static bool unselectedThisFrame = false;
     protected Dictionary<string, UnityAction<string>> actions;
 
-    static Dictionary<string, int> UNIT_NUMBERS = new Dictionary<string, int>();
+    static int UNIT_NUMBERS;
     private int unitNumber = 0;
 
     public void Init(IUnitInput i, UnitData d, List<Soldier> s, Unit u)
@@ -34,11 +34,7 @@ public abstract class UnitController
 
         if (!unit.isAi)
         {
-            if (!UNIT_NUMBERS.ContainsKey(Name))
-            {
-                UNIT_NUMBERS.Add(Name, 0);
-            }
-            unitNumber = ++UNIT_NUMBERS[Name];
+            unitNumber = ++UNIT_NUMBERS;
         }
 
         actions.Add(data.UnitName, Select);
@@ -48,7 +44,7 @@ public abstract class UnitController
             {
                 actions.Add(action, Select);
             }
-            else if (action == "uno" || action == "dos" || action == "tres" || action == "cuatro" || action == "cinco")
+            else if (action == "uno" || action == "dos" || action == "tres" || action == "cuatro" || action == "cinco" || action == "seis" || action == "siete" || action == "ocho" || action == "nueve")
             {
                 actions.Add(action, Subselect);
             } else
@@ -109,8 +105,20 @@ public abstract class UnitController
             case "cinco":
                 intNum = 5;
                 break;
+            case "seis":
+                intNum = 6;
+                break;
+            case "siete":
+                intNum = 7;
+                break;
+            case "ocho":
+                intNum = 8;
+                break;
+            case "nueve":
+                intNum = 9;
+                break;
         }
-        if (selected == true && intNum == unitNumber)
+        if (intNum == unitNumber)
         {
             Select(Name);
         }

@@ -5,6 +5,9 @@ using UnityEngine;
 [CreateAssetMenu(menuName = "States/Battle")]
 public class BattleState : ScriptableState
 {
+    [SerializeField]
+    private AudioClip battleClip;
+
     private bool CheckAngle(UnitController controller, Transform t, Vector3 point)
     {
         Vector3 pointToCheck = point;
@@ -69,11 +72,14 @@ public class BattleState : ScriptableState
                 }
             }
         }
+
+        controller.Unit.PlayLoop(battleClip);
     }
 
     public override void OnExitState(UnitController controller)
     {
         controller.Unit.Disengage();
+        controller.Unit.StopLoop();
     }
 
     public override void OnTick(UnitController controller)

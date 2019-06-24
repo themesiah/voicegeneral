@@ -10,10 +10,8 @@ X Arreglar elefantes
 X Quitar target cuando deseleccionas unidad
 X Mejorar snap de combate
 X Cambiar cosa de selección
+X IA
 
-- IA
-- Diseñar niveles
-- Interprete mapas json
 - Carga de los elefantes rompe bosques
-- Añadir música (dependiendo del bando)
 - Añadir sonidos
+- Banderas con numeros en vez de texturas

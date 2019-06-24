@@ -2,18 +2,27 @@
 using UnityEngine.AI;
 using System.Linq;
 using System.Collections.Generic;
+using System;
 
 public class Unit : MonoBehaviour {
-    [SerializeField]
-    private UnitData unitData;
+    [Header("Data")]
+    public UnitData unitData;
     public bool isAi;
-    private IUnitInput input;
-    private UnitController controller;
+    public bool isRoman;
+
+    //Components
     [HideInInspector]
     public Health health;
     private NavMeshAgent agent;
+    private AudioSource audioSource;
+
+    // Internal
+    private IUnitInput input;
+    private UnitController controller;
     public List<Soldier> soldiers;
     private int startingSoldiers;
+
+    // Other objects
     [SerializeField]
     private GameObject engageObject;
 
@@ -42,6 +51,7 @@ public class Unit : MonoBehaviour {
         health = GetComponent<Health>();
         health.OnDamage += OnDamage;
         health.OnDie += OnDie;
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Use this for initialization
@@ -91,6 +101,11 @@ public class Unit : MonoBehaviour {
         }
     }
 
+    internal void PlayLoop(object battleClip)
+    {
+        throw new NotImplementedException();
+    }
+
     private void OnEnable()
     {
         if (isAi == true)
@@ -130,7 +145,7 @@ public class Unit : MonoBehaviour {
         int toKill = soldiers.Count - targetSoldierQuantity;
         for (int i = 0; i < toKill; ++i)
         {
-            int index = Random.Range(0, soldiers.Count);
+            int index = UnityEngine.Random.Range(0, soldiers.Count);
             Soldier s = soldiers[index];
             soldiers.Remove(s);
             s.Die();
@@ -170,5 +185,34 @@ public class Unit : MonoBehaviour {
     public Unit GetEngaged()
     {
         return engagedWith;
+    }
+
+    public void PlayAudio(AudioClip clip)
+    {
+        if (audioSource != null)
+        {
+            audioSource.Stop();
+            audioSource.PlayOneShot(clip);
+        }
+    }
+
+    public void PlayLoop(AudioClip clip)
+    {
+        if (audioSource != null)
+        {
+            audioSource.Stop();
+            audioSource.clip = clip;
+            audioSource.loop = true;
+            audioSource.Play();
+        }
+    }
+
+    public void StopLoop()
+    {
+        if (audioSource != null)
+        {
+            audioSource.Stop();
+            audioSource.clip = null;
+        }
     }
 }

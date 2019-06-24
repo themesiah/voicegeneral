@@ -25,7 +25,7 @@ public class ValidTargetCondition : ScriptableCondition
     {
         // First check if it's a valid target
         Transform t = controller.Unit.transform;
-        Vector3 point = TargetController.instance.GetPoint();
+        Vector3 point = controller.Input.GetPoint(); ;
         bool valid = false;
         if (CheckDistance(controller, t, point) && CheckAngle(controller, t, point))
         {

@@ -10,7 +10,7 @@ public class ValidMovementCondition : ScriptableCondition
     {
         NavMeshAgent nma = controller.Unit.GetComponent<NavMeshAgent>();
         NavMeshPath p = new NavMeshPath();
-        bool valid = nma.CalculatePath(TargetController.instance.GetPoint(), p);
+        bool valid = nma.CalculatePath(controller.Input.GetPoint(), p);
         return valid;
     }
 }

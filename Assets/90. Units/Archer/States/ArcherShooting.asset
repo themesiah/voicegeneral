@@ -4,7 +4,8 @@
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -16,3 +17,4 @@ MonoBehaviour:
     trueState: {fileID: 11400000, guid: 3373f0735474f9a41830f9a8004080de, type: 2}
     falseState: {fileID: 0}
   messageTransitions: []
+  shootSound: {fileID: 8300000, guid: 366a4c6009a277649929c2d05fa86632, type: 3}

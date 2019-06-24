@@ -11,6 +11,8 @@ public class ShootingState : ScriptableState
         public float time;
     }
 
+    public AudioClip shootSound;
+
     public override void OnEnterState(UnitController controller)
     {
         
@@ -21,13 +23,14 @@ public class ShootingState : ScriptableState
             s.PlayAnimation("disparo flecha", 0f, 0.3f);
         }
         // Calculate the force
-        Vector3 point = TargetController.instance.GetPoint();
+        Vector3 point = controller.Input.GetPoint();
         ShotInfo shotInfo = CalculateForce(controller, controller.Unit.transform.position, point);
         foreach (Soldier s in soldiers)
         {
             controller.Unit.StartCoroutine(SpawnArrow(controller, s, shotInfo));
         }
         controller.Unit.StartCoroutine(SpawnDamage(controller, point, shotInfo));
+        controller.Unit.PlayAudio(shootSound);
     }
 
     public override void OnExitState(UnitController controller)

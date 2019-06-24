@@ -4,6 +4,9 @@ using UnityEngine.AI;
 [CreateAssetMenu(menuName = "States/Charge")]
 public class ChargeState : ScriptableState
 {
+    [SerializeField]
+    private AudioClip chargeClip;
+
     public override void OnEnterState(UnitController controller)
     {
         Soldier[] soldiers = controller.Soldiers;
@@ -14,6 +17,7 @@ public class ChargeState : ScriptableState
 
         NavMeshAgent nma = controller.Unit.GetAgent();
         nma.enabled = true;
+        controller.Unit.PlayAudio(chargeClip);
     }
 
     public override void OnExitState(UnitController controller)

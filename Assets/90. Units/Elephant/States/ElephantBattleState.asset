@@ -4,7 +4,8 @@
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -19,6 +20,4 @@ MonoBehaviour:
   - message: Wait
     state: {fileID: 11400000, guid: d636a1bcc6ba18d48a935394df043639, type: 2}
     extraCondition: {fileID: 0}
-  - message: Move
-    state: {fileID: 11400000, guid: e075c9431f1490347a812a934714995e, type: 2}
-    extraCondition: {fileID: 0}
+  battleClip: {fileID: 8300000, guid: 5ae7274056b9e6c4ab857570adcf4866, type: 3}

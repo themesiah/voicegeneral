@@ -6,30 +6,71 @@ using UnityEngine.UI;
 
 public class BattleManager : MonoBehaviour
 {
+    [Header("Sets")]
     [SerializeField]
     private RuntimeUnitSet allySet;
     [SerializeField]
     private RuntimeUnitSet enemySet;
-
+    [Header("UI")]
     [SerializeField]
     private Text endText;
     [SerializeField]
     private Button endButton;
+    [Header("BGM")]
+    [SerializeField]
+    private AudioClip victoryJingle;
+    [SerializeField]
+    private AudioClip defeatJingle;
+
+    private bool initialized = false;
+
+
+    private AudioSource cameraAudio;
 
     private bool finished = false;
 
-	void Update () {
-        if (allySet.Items.Count == 0 && !finished)
+    private void Awake()
+    {
+        Camera c = Camera.main;
+        if (c != null)
         {
-            endText.text = "Has perdido la batalla, ¡pero no la guerra!";
-            Finish();
+            cameraAudio = c.GetComponent<AudioSource>();
         }
-        else if (enemySet.Items.Count == 0 && !finished)
+    }
+
+    public void Initialize()
+    {
+        initialized = true;
+    }
+
+    void Update () {
+        if (initialized == true)
         {
-            endText.text = "¡La victoria es tuya!";
-            Finish();
+            if (allySet.Items.Count == 0 && !finished)
+            {
+                endText.text = "Has perdido la batalla, ¡pero no la guerra!";
+                PlayFinishAudio(defeatJingle);
+                Finish();
+            }
+            else if (enemySet.Items.Count == 0 && !finished)
+            {
+                endText.text = "¡La victoria es tuya!";
+                PlayFinishAudio(victoryJingle);
+                Finish();
+            }
         }
 	}
+
+    private void PlayFinishAudio(AudioClip clip)
+    {
+        if (cameraAudio != null)
+        {
+            cameraAudio.Stop();
+            cameraAudio.clip = clip;
+            cameraAudio.loop = true;
+            cameraAudio.Play();
+        }
+    }
 
     private void Finish()
     {

@@ -6,10 +6,13 @@ using UnityEngine.AI;
 [CreateAssetMenu(menuName = "States/Move State")]
 public class MoveState : ScriptableState
 {
+    [SerializeField]
+    private AudioClip movementClip;
+
     public override void OnEnterState(UnitController controller)
     {
         // Set destination
-        Vector3 targetPosition = TargetController.instance.GetPoint();
+        Vector3 targetPosition = controller.Input.GetPoint();
         NavMeshAgent nma = controller.Unit.GetComponent<NavMeshAgent>();
         nma.enabled = true;
         nma.SetDestination(targetPosition);
@@ -25,6 +28,7 @@ public class MoveState : ScriptableState
 
         // Update controller with target position
         controller.targetPosition = targetPosition;
+        controller.Unit.PlayLoop(movementClip);
     }
 
     public override void OnExitState(UnitController controller)
@@ -32,6 +36,7 @@ public class MoveState : ScriptableState
         NavMeshAgent nma = controller.Unit.GetComponent<NavMeshAgent>();
         nma.isStopped = true;
         nma.enabled = false;
+        controller.Unit.StopLoop();
     }
 
     public override void OnTick(UnitController controller)
