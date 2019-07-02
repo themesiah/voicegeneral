@@ -25,6 +25,8 @@ public class Unit : MonoBehaviour {
     // Other objects
     [SerializeField]
     private GameObject engageObject;
+    [SerializeField]
+    private List<TMPro.TextMeshProUGUI> unitNumberTexts;
 
     private Vector3 targetPosition;
 
@@ -213,6 +215,14 @@ public class Unit : MonoBehaviour {
         {
             audioSource.Stop();
             audioSource.clip = null;
+        }
+    }
+
+    public void ChangeUnitNumber(string number)
+    {
+        foreach(TMPro.TextMeshProUGUI text in unitNumberTexts)
+        {
+            text.text = number;
         }
     }
 }

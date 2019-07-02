@@ -35,6 +35,7 @@ public abstract class UnitController
         if (!unit.isAi)
         {
             unitNumber = ++UNIT_NUMBERS;
+            unit.ChangeUnitNumber(unitNumber.ToString());
         }
 
         actions.Add(data.UnitName, Select);

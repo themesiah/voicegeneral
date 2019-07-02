@@ -12,6 +12,7 @@ public class ShootingState : ScriptableState
     }
 
     public AudioClip shootSound;
+    public float delay = 0f;
 
     public override void OnEnterState(UnitController controller)
     {
@@ -65,7 +66,7 @@ public class ShootingState : ScriptableState
 
     IEnumerator SpawnArrow(UnitController controller, Soldier s, ShotInfo shotInfo)
     {
-        yield return new WaitForSeconds(Random.Range(0f, 0.3f));
+        yield return new WaitForSeconds(Random.Range(0f+delay, 0.3f+delay));
         GameObject go = Instantiate(controller.Data.ProjectilePrefab, s.transform.position, Quaternion.identity);
         Rigidbody rb = go.GetComponent<Rigidbody>();
         rb.AddForce(shotInfo.force, ForceMode.VelocityChange);
@@ -74,7 +75,7 @@ public class ShootingState : ScriptableState
 
     IEnumerator SpawnDamage(UnitController controller, Vector3 target, ShotInfo shotInfo)
     {
-        yield return new WaitForSeconds(shotInfo.time-1f);
+        yield return new WaitForSeconds(shotInfo.time-1f+delay);
         Instantiate(controller.Data.AreaDamage, target, Quaternion.identity);
     }
 }

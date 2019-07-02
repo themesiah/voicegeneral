@@ -24,7 +24,7 @@ MonoBehaviour:
   - prefab: {fileID: 1695434310743490, guid: 9dc8f9fbf5d58df43811a3d55fe3e914, type: 3}
     angle: 0
   - prefab: {fileID: 1939951690150350, guid: 0c03093b55caf75499a4d6a68d228d36, type: 3}
-    angle: 0
+    angle: 180
   - prefab: {fileID: 1939951690150350, guid: 0c03093b55caf75499a4d6a68d228d36, type: 3}
     angle: 270
   - prefab: {fileID: 1718779038692230, guid: f363e24a143a06e4ebca9755ade7683b, type: 3}
@@ -42,7 +42,7 @@ MonoBehaviour:
   - prefab: {fileID: 1939951690150350, guid: 0c03093b55caf75499a4d6a68d228d36, type: 3}
     angle: 90
   - prefab: {fileID: 1939951690150350, guid: 0c03093b55caf75499a4d6a68d228d36, type: 3}
-    angle: 90
+    angle: 0
   - prefab: {fileID: 1718779038692230, guid: f363e24a143a06e4ebca9755ade7683b, type: 3}
     angle: 90
   - prefab: {fileID: 1092042889125234, guid: f350ea344d2a45c4bb71eaded9022d35, type: 3}
@@ -128,7 +128,7 @@ MonoBehaviour:
   - prefab: {fileID: 3662232950998374837, guid: d1feed889b0519440867017827a6a470,
       type: 3}
     angle: 180
-  - prefab: {fileID: 1593498731684670274, guid: 7ed77d401b5072644ad7abac8696718a,
+  - prefab: {fileID: 6801474610624793588, guid: 58161803c2a15414e8a908fdddde2a39,
       type: 3}
     angle: 90
   - prefab: {fileID: 6801474610624793588, guid: 58161803c2a15414e8a908fdddde2a39,

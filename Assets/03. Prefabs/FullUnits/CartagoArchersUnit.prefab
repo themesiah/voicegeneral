@@ -34,30 +34,30 @@ Transform:
   - {fileID: 3664962980546508850}
   - {fileID: 7517764619697629700}
   - {fileID: 8925720834667109176}
-  - {fileID: 3854876236065127215}
-  - {fileID: 6889744129666299116}
-  - {fileID: 1942160432314721905}
-  - {fileID: 3770481342817548604}
-  - {fileID: 1724707918954784531}
-  - {fileID: 309628112642498513}
-  - {fileID: 5406168529516336332}
-  - {fileID: 7787199975384335352}
-  - {fileID: 2118259096473249306}
-  - {fileID: 969747026312738427}
-  - {fileID: 3109240965549663596}
-  - {fileID: 686434505182897484}
-  - {fileID: 6167021339833737794}
-  - {fileID: 2464237577961750248}
-  - {fileID: 1992511957290784729}
-  - {fileID: 3346744838720093651}
-  - {fileID: 4142272487278796842}
-  - {fileID: 4395220403720052960}
-  - {fileID: 2828109036662567472}
-  - {fileID: 5795992824638269749}
-  - {fileID: 3428489735787593723}
-  - {fileID: 4058755740015300683}
-  - {fileID: 614249364517464420}
-  - {fileID: 2739393779196880769}
+  - {fileID: 8622763914501673542}
+  - {fileID: 4758596972827548681}
+  - {fileID: 4386407373286706952}
+  - {fileID: 4033837628348838105}
+  - {fileID: 1634654638450058875}
+  - {fileID: 2068804407945911906}
+  - {fileID: 7865578092305151707}
+  - {fileID: 2856573917378027117}
+  - {fileID: 1943625561320955630}
+  - {fileID: 3794738587553559191}
+  - {fileID: 8400169816535967301}
+  - {fileID: 3645155733741842622}
+  - {fileID: 4493817782099132564}
+  - {fileID: 5577335149170071796}
+  - {fileID: 6498060590510574469}
+  - {fileID: 5020259444352038741}
+  - {fileID: 7973464754675123554}
+  - {fileID: 526288308368004012}
+  - {fileID: 2710373499158779760}
+  - {fileID: 3755795637754368930}
+  - {fileID: 8180348822683523091}
+  - {fileID: 1801972767122847564}
+  - {fileID: 1212707632002019905}
+  - {fileID: 8536382395284682872}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -79,6 +79,9 @@ MonoBehaviour:
   health: {fileID: 0}
   soldiers: []
   engageObject: {fileID: 7512674058146173942}
+  unitNumberTexts:
+  - {fileID: 6094157714313227831}
+  - {fileID: 461058559196424805}
   playerSet: {fileID: 11400000, guid: 3efb7d8270c5420449f219c0a5bb92e8, type: 2}
   iaSet: {fileID: 11400000, guid: 7df63c8a4e5f3d04c81c6b7131e245dc, type: 2}
   enemySet: {fileID: 11400000, guid: 3efb7d8270c5420449f219c0a5bb92e8, type: 2}
@@ -216,1141 +219,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!1001 &307269757237017491
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 3662232950998374833}
-    m_Modifications:
-    - target: {fileID: 1013373800404172, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_Name
-      value: Arquero cartagines (6)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -1.33
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.49
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_RootOrder
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
---- !u!4 &309628112642498513 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867,
-    type: 3}
-  m_PrefabInstance: {fileID: 307269757237017491}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &615270890673818918
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 3662232950998374833}
-    m_Modifications:
-    - target: {fileID: 1013373800404172, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_Name
-      value: Arquero cartagines (23)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 2.23
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.05
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_RootOrder
-      value: 25
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
---- !u!4 &614249364517464420 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867,
-    type: 3}
-  m_PrefabInstance: {fileID: 615270890673818918}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &687104178751635726
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 3662232950998374833}
-    m_Modifications:
-    - target: {fileID: 1013373800404172, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_Name
-      value: Arquero cartagines (12)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.06
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 2.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_RootOrder
-      value: 14
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
---- !u!4 &686434505182897484 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867,
-    type: 3}
-  m_PrefabInstance: {fileID: 687104178751635726}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &971258955601695289
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 3662232950998374833}
-    m_Modifications:
-    - target: {fileID: 1013373800404172, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_Name
-      value: Arquero cartagines (10)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.43
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_RootOrder
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
---- !u!4 &969747026312738427 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867,
-    type: 3}
-  m_PrefabInstance: {fileID: 971258955601695289}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &1720592354987508561
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 3662232950998374833}
-    m_Modifications:
-    - target: {fileID: 1013373800404172, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_Name
-      value: Arquero cartagines (5)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.91
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.42
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_RootOrder
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
---- !u!4 &1724707918954784531 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867,
-    type: 3}
-  m_PrefabInstance: {fileID: 1720592354987508561}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &1944518783945327155
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 3662232950998374833}
-    m_Modifications:
-    - target: {fileID: 1013373800404172, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_Name
-      value: Arquero cartagines (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.84
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1.82
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
---- !u!4 &1942160432314721905 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867,
-    type: 3}
-  m_PrefabInstance: {fileID: 1944518783945327155}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &1993249680617370523
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 3662232950998374833}
-    m_Modifications:
-    - target: {fileID: 1013373800404172, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_Name
-      value: Arquero cartagines (15)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -1.82
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.84
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_RootOrder
-      value: 17
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
---- !u!4 &1992511957290784729 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867,
-    type: 3}
-  m_PrefabInstance: {fileID: 1993249680617370523}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &2119559880600044120
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 3662232950998374833}
-    m_Modifications:
-    - target: {fileID: 1013373800404172, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_Name
-      value: Arquero cartagines (9)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.06
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -2.22
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_RootOrder
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
---- !u!4 &2118259096473249306 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867,
-    type: 3}
-  m_PrefabInstance: {fileID: 2119559880600044120}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &2467156839713135274
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 3662232950998374833}
-    m_Modifications:
-    - target: {fileID: 1013373800404172, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_Name
-      value: Arquero cartagines (14)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1.33
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.47
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_RootOrder
-      value: 16
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
---- !u!4 &2464237577961750248 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867,
-    type: 3}
-  m_PrefabInstance: {fileID: 2467156839713135274}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &2741541221894915011
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 3662232950998374833}
-    m_Modifications:
-    - target: {fileID: 1013373800404172, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_Name
-      value: Arquero cartagines (24)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 2.65
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.95
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_RootOrder
-      value: 26
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
---- !u!4 &2739393779196880769 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867,
-    type: 3}
-  m_PrefabInstance: {fileID: 2741541221894915011}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &2823993605311092338
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 3662232950998374833}
-    m_Modifications:
-    - target: {fileID: 1013373800404172, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_Name
-      value: Arquero cartagines (19)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -1.39
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -1.74
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_RootOrder
-      value: 21
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
---- !u!4 &2828109036662567472 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867,
-    type: 3}
-  m_PrefabInstance: {fileID: 2823993605311092338}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &3110192084040859950
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 3662232950998374833}
-    m_Modifications:
-    - target: {fileID: 1013373800404172, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_Name
-      value: Arquero cartagines (11)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.48
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1.34
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_RootOrder
-      value: 13
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
---- !u!4 &3109240965549663596 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867,
-    type: 3}
-  m_PrefabInstance: {fileID: 3110192084040859950}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &3350018026708310417
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 3662232950998374833}
-    m_Modifications:
-    - target: {fileID: 1013373800404172, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_Name
-      value: Arquero cartagines (16)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -2.24
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.07
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_RootOrder
-      value: 18
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
---- !u!4 &3346744838720093651 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867,
-    type: 3}
-  m_PrefabInstance: {fileID: 3350018026708310417}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &3430564413158185913
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 3662232950998374833}
-    m_Modifications:
-    - target: {fileID: 1013373800404172, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_Name
-      value: Arquero cartagines (21)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.85
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_RootOrder
-      value: 23
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
---- !u!4 &3428489735787593723 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867,
-    type: 3}
-  m_PrefabInstance: {fileID: 3430564413158185913}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &3773121324045720958
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 3662232950998374833}
-    m_Modifications:
-    - target: {fileID: 1013373800404172, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_Name
-      value: Arquero cartagines (4)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.85
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -1.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_RootOrder
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
---- !u!4 &3770481342817548604 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867,
-    type: 3}
-  m_PrefabInstance: {fileID: 3773121324045720958}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &3850829008511131501
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 3662232950998374833}
-    m_Modifications:
-    - target: {fileID: 1013373800404172, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_Name
-      value: Arquero cartagines (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.42
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.91
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
---- !u!4 &3854876236065127215 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867,
-    type: 3}
-  m_PrefabInstance: {fileID: 3850829008511131501}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &4061184464961827849
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 3662232950998374833}
-    m_Modifications:
-    - target: {fileID: 1013373800404172, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_Name
-      value: Arquero cartagines (22)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.96
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 2.67
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_RootOrder
-      value: 24
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
---- !u!4 &4058755740015300683 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867,
-    type: 3}
-  m_PrefabInstance: {fileID: 4061184464961827849}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &4139916326618694760
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 3662232950998374833}
-    m_Modifications:
-    - target: {fileID: 1013373800404172, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_Name
-      value: Arquero cartagines (17)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -2.66
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.98
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_RootOrder
-      value: 19
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
---- !u!4 &4142272487278796842 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867,
-    type: 3}
-  m_PrefabInstance: {fileID: 4139916326618694760}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &4391384278120432802
+--- !u!1001 &523087683567073262
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1363,7 +232,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.97
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1371,7 +240,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.64
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
       propertyPath: m_LocalRotation.x
@@ -1407,13 +276,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
---- !u!4 &4395220403720052960 stripped
+--- !u!4 &526288308368004012 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867,
     type: 3}
-  m_PrefabInstance: {fileID: 4391384278120432802}
+  m_PrefabInstance: {fileID: 523087683567073262}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &5406906385699270798
+--- !u!1001 &1214782490291492355
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1422,11 +291,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1013373800404172, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
       propertyPath: m_Name
-      value: Arquero cartagines (7)
+      value: Arquero cartagines (23)
       objectReference: {fileID: 0}
     - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.75
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1434,7 +303,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
       propertyPath: m_LocalRotation.x
@@ -1454,7 +323,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1470,13 +339,454 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
---- !u!4 &5406168529516336332 stripped
+--- !u!4 &1212707632002019905 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867,
     type: 3}
-  m_PrefabInstance: {fileID: 5406906385699270798}
+  m_PrefabInstance: {fileID: 1214782490291492355}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &5791666316852333943
+--- !u!1001 &1630536900434477625
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3662232950998374833}
+    m_Modifications:
+    - target: {fileID: 1013373800404172, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_Name
+      value: Arquero cartagines (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+--- !u!4 &1634654638450058875 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867,
+    type: 3}
+  m_PrefabInstance: {fileID: 1630536900434477625}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1805457160144556814
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3662232950998374833}
+    m_Modifications:
+    - target: {fileID: 1013373800404172, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_Name
+      value: Arquero cartagines (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_RootOrder
+      value: 24
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+--- !u!4 &1801972767122847564 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867,
+    type: 3}
+  m_PrefabInstance: {fileID: 1805457160144556814}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1942885639241693868
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3662232950998374833}
+    m_Modifications:
+    - target: {fileID: 1013373800404172, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_Name
+      value: Arquero cartagines (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+--- !u!4 &1943625561320955630 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867,
+    type: 3}
+  m_PrefabInstance: {fileID: 1942885639241693868}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2070107383319902752
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3662232950998374833}
+    m_Modifications:
+    - target: {fileID: 1013373800404172, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_Name
+      value: Arquero cartagines (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+--- !u!4 &2068804407945911906 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867,
+    type: 3}
+  m_PrefabInstance: {fileID: 2070107383319902752}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2707383838579831602
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3662232950998374833}
+    m_Modifications:
+    - target: {fileID: 1013373800404172, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_Name
+      value: Arquero cartagines (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_RootOrder
+      value: 21
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+--- !u!4 &2710373499158779760 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867,
+    type: 3}
+  m_PrefabInstance: {fileID: 2707383838579831602}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2858439687530641967
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3662232950998374833}
+    m_Modifications:
+    - target: {fileID: 1013373800404172, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_Name
+      value: Arquero cartagines (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+--- !u!4 &2856573917378027117 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867,
+    type: 3}
+  m_PrefabInstance: {fileID: 2858439687530641967}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3646104545567429884
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3662232950998374833}
+    m_Modifications:
+    - target: {fileID: 1013373800404172, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_Name
+      value: Arquero cartagines (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_RootOrder
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+--- !u!4 &3645155733741842622 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867,
+    type: 3}
+  m_PrefabInstance: {fileID: 3646104545567429884}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &3751750468311545824
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1489,7 +799,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.38
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1497,7 +807,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.76
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
       propertyPath: m_LocalRotation.x
@@ -1533,13 +843,202 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
---- !u!4 &5795992824638269749 stripped
+--- !u!4 &3755795637754368930 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867,
     type: 3}
-  m_PrefabInstance: {fileID: 5791666316852333943}
+  m_PrefabInstance: {fileID: 3751750468311545824}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &6168251626384115200
+--- !u!1001 &3793789779746363093
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3662232950998374833}
+    m_Modifications:
+    - target: {fileID: 1013373800404172, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_Name
+      value: Arquero cartagines (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+--- !u!4 &3794738587553559191 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867,
+    type: 3}
+  m_PrefabInstance: {fileID: 3793789779746363093}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4032042063989363867
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3662232950998374833}
+    m_Modifications:
+    - target: {fileID: 1013373800404172, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_Name
+      value: Arquero cartagines (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+--- !u!4 &4033837628348838105 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867,
+    type: 3}
+  m_PrefabInstance: {fileID: 4032042063989363867}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4382010492982029130
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3662232950998374833}
+    m_Modifications:
+    - target: {fileID: 1013373800404172, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_Name
+      value: Arquero cartagines (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+--- !u!4 &4386407373286706952 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867,
+    type: 3}
+  m_PrefabInstance: {fileID: 4382010492982029130}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4490825918755415254
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1552,7 +1051,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.75
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1560,7 +1059,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.37
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
       propertyPath: m_LocalRotation.x
@@ -1596,11 +1095,263 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
---- !u!4 &6167021339833737794 stripped
+--- !u!4 &4493817782099132564 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867,
     type: 3}
-  m_PrefabInstance: {fileID: 6168251626384115200}
+  m_PrefabInstance: {fileID: 4490825918755415254}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &4757577654544136267
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3662232950998374833}
+    m_Modifications:
+    - target: {fileID: 1013373800404172, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_Name
+      value: Arquero cartagines (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+--- !u!4 &4758596972827548681 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867,
+    type: 3}
+  m_PrefabInstance: {fileID: 4757577654544136267}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5018182382721028887
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3662232950998374833}
+    m_Modifications:
+    - target: {fileID: 1013373800404172, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_Name
+      value: Arquero cartagines (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_RootOrder
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+--- !u!4 &5020259444352038741 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867,
+    type: 3}
+  m_PrefabInstance: {fileID: 5018182382721028887}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5578004814426012854
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3662232950998374833}
+    m_Modifications:
+    - target: {fileID: 1013373800404172, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_Name
+      value: Arquero cartagines (14)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_RootOrder
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+--- !u!4 &5577335149170071796 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867,
+    type: 3}
+  m_PrefabInstance: {fileID: 5578004814426012854}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6494787398219329479
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3662232950998374833}
+    m_Modifications:
+    - target: {fileID: 1013373800404172, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_Name
+      value: Arquero cartagines (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+--- !u!4 &6498060590510574469 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867,
+    type: 3}
+  m_PrefabInstance: {fileID: 6494787398219329479}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6498291456262692902
 PrefabInstance:
@@ -1691,74 +1442,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f0f56e5cff986284ab7c6f809a1b9791, type: 3}
+--- !u!114 &6094157714313227831 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1061826422121090577, guid: f0f56e5cff986284ab7c6f809a1b9791,
+    type: 3}
+  m_PrefabInstance: {fileID: 6498291456262692902}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &461058559196424805 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6649727540773521987, guid: f0f56e5cff986284ab7c6f809a1b9791,
+    type: 3}
+  m_PrefabInstance: {fileID: 6498291456262692902}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &3664962980546508850 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7562108716419389460, guid: f0f56e5cff986284ab7c6f809a1b9791,
     type: 3}
   m_PrefabInstance: {fileID: 6498291456262692902}
-  m_PrefabAsset: {fileID: 0}
---- !u!1001 &6886822828080189614
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 3662232950998374833}
-    m_Modifications:
-    - target: {fileID: 1013373800404172, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_Name
-      value: Arquero cartagines (2)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.43
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.9
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
---- !u!4 &6889744129666299116 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867,
-    type: 3}
-  m_PrefabInstance: {fileID: 6886822828080189614}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7513321877735625304
 PrefabInstance:
@@ -1833,7 +1545,7 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 7513321877735625304}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &7790682036764944314
+--- !u!1001 &7865401021393244825
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -1842,11 +1554,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1013373800404172, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
       propertyPath: m_Name
-      value: Arquero cartagines (8)
+      value: Arquero cartagines (7)
       objectReference: {fileID: 0}
     - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.48
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1854,7 +1566,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.32
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
       propertyPath: m_LocalRotation.x
@@ -1874,7 +1586,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1890,11 +1602,326 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
---- !u!4 &7787199975384335352 stripped
+--- !u!4 &7865578092305151707 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867,
     type: 3}
-  m_PrefabInstance: {fileID: 7790682036764944314}
+  m_PrefabInstance: {fileID: 7865401021393244825}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7973850624868540704
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3662232950998374833}
+    m_Modifications:
+    - target: {fileID: 1013373800404172, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_Name
+      value: Arquero cartagines (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_RootOrder
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+--- !u!4 &7973464754675123554 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867,
+    type: 3}
+  m_PrefabInstance: {fileID: 7973850624868540704}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8181297789117201489
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3662232950998374833}
+    m_Modifications:
+    - target: {fileID: 1013373800404172, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_Name
+      value: Arquero cartagines (21)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_RootOrder
+      value: 23
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+--- !u!4 &8180348822683523091 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867,
+    type: 3}
+  m_PrefabInstance: {fileID: 8181297789117201489}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8402807499962925575
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3662232950998374833}
+    m_Modifications:
+    - target: {fileID: 1013373800404172, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_Name
+      value: Arquero cartagines (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_RootOrder
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+--- !u!4 &8400169816535967301 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867,
+    type: 3}
+  m_PrefabInstance: {fileID: 8402807499962925575}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8536840927992716346
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3662232950998374833}
+    m_Modifications:
+    - target: {fileID: 1013373800404172, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_Name
+      value: Arquero cartagines (24)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_RootOrder
+      value: 26
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+--- !u!4 &8536382395284682872 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867,
+    type: 3}
+  m_PrefabInstance: {fileID: 8536840927992716346}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8621463155861566980
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3662232950998374833}
+    m_Modifications:
+    - target: {fileID: 1013373800404172, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_Name
+      value: Arquero cartagines (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7a23e6de523046945a148bb5585d4867, type: 3}
+--- !u!4 &8622763914501673542 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4399247370937410, guid: 7a23e6de523046945a148bb5585d4867,
+    type: 3}
+  m_PrefabInstance: {fileID: 8621463155861566980}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8921955048543502202
 PrefabInstance:

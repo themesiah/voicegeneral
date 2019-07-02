@@ -11,7 +11,10 @@ X Quitar target cuando deseleccionas unidad
 X Mejorar snap de combate
 X Cambiar cosa de selección
 X IA
+X Banderas con numeros en vez de texturas
+X Implementar catapulta
+X Arreglar tiles
 
 - Carga de los elefantes rompe bosques
 - Añadir sonidos
-- Banderas con numeros en vez de texturas
+- Selector de nivel

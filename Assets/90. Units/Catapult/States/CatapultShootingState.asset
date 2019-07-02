@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af000bf7c5c358e4096fa4fcef713c8d, type: 3}
+  m_Name: CatapultShootingState
+  m_EditorClassIdentifier: 
+  transitions:
+  - condition: {fileID: 11400000, guid: 605d61e5b5e43714389c253aef40012f, type: 2}
+    trueState: {fileID: 11400000, guid: 3294eba6eddfd084084b75a88538678a, type: 2}
+    falseState: {fileID: 0}
+  messageTransitions: []
+  shootSound: {fileID: 8300000, guid: 68c59b7433882a74f9296d410935495f, type: 3}
+  delay: 0.8

@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e06e95efa29916f43944dfd290c4d2e2, type: 3}
+  m_Name: CatapultPrepareAimState
+  m_EditorClassIdentifier: 
+  transitions:
+  - condition: {fileID: 11400000, guid: e88c7a213139f8e4b8985e9c4434e5c1, type: 2}
+    trueState: {fileID: 11400000, guid: 34fb2d97b739f684eae6dae2be1f46e1, type: 2}
+    falseState: {fileID: 0}
+  messageTransitions: []

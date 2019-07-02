@@ -57,6 +57,9 @@ MonoBehaviour:
   health: {fileID: 0}
   soldiers: []
   engageObject: {fileID: 3937771140511330612}
+  unitNumberTexts:
+  - {fileID: 7820777464835612941}
+  - {fileID: 4502532951803618655}
   playerSet: {fileID: 11400000, guid: 3efb7d8270c5420449f219c0a5bb92e8, type: 2}
   iaSet: {fileID: 11400000, guid: 7df63c8a4e5f3d04c81c6b7131e245dc, type: 2}
   enemySet: {fileID: 11400000, guid: 7df63c8a4e5f3d04c81c6b7131e245dc, type: 2}
@@ -511,3 +514,27 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 7076463615121747740}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7820777464835612941 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1061826422121090577, guid: f0f56e5cff986284ab7c6f809a1b9791,
+    type: 3}
+  m_PrefabInstance: {fileID: 7076463615121747740}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4502532951803618655 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6649727540773521987, guid: f0f56e5cff986284ab7c6f809a1b9791,
+    type: 3}
+  m_PrefabInstance: {fileID: 7076463615121747740}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

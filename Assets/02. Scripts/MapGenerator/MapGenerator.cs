@@ -8,6 +8,7 @@ public class MapGenerator : MonoBehaviour
 {
     [SerializeField]
     private TextAsset textAsset;
+    public static TextAsset selectedLevel;
 
     [SerializeField]
     private TilesData tilesData;
@@ -24,6 +25,10 @@ public class MapGenerator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if (selectedLevel != null)
+        {
+            textAsset = selectedLevel;
+        }
         string data = textAsset.text;
         Map map = JsonUtility.FromJson<Map>(data);
         InstantiateMap(map);
@@ -46,7 +51,6 @@ public class MapGenerator : MonoBehaviour
             {
                 int index = i + j * width;
                 SpawnTerrain(layerTerrain.data[index], i, j);
-                //SpawnUnit(layerUnits.data[index], i, j, romans);
             }
         }
     }
@@ -65,7 +69,6 @@ public class MapGenerator : MonoBehaviour
             for (int i = 0; i < width; ++i)
             {
                 int index = i + j * width;
-                //SpawnTerrain(layerTerrain.data[index], i, j);
                 SpawnUnit(layerUnits.data[index], i, j, romans);
             }
         }
@@ -76,6 +79,7 @@ public class MapGenerator : MonoBehaviour
         if (dataIndex != 0)
         {
             GameObject unitObject = Instantiate(tilesData.tiles[dataIndex].prefab);
+            unitObject.name += "Unit " + dataIndex.ToString();
             unitObject.transform.localPosition = new Vector3(i * tileSize, 0f, -j * tileSize);
             unitObject.transform.rotation = Quaternion.Euler(0f, tilesData.tiles[dataIndex].angle, 0f);
 
@@ -93,6 +97,7 @@ public class MapGenerator : MonoBehaviour
         if (dataIndex != 0)
         {
             GameObject terrainObject = Instantiate(tilesData.tiles[dataIndex].prefab, transform);
+            terrainObject.name += "(" + dataIndex + ")";
             terrainObject.transform.localPosition = new Vector3(i * tileSize, terrainObject.transform.localPosition.y, -j * tileSize);
             terrainObject.transform.rotation = Quaternion.Euler(-90f, 0f, tilesData.tiles[dataIndex].angle);
         }
