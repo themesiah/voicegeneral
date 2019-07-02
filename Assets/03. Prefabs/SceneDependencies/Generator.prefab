@@ -49,6 +49,7 @@ MonoBehaviour:
   tileSize: 20
   initializeEvent: {fileID: 11400000, guid: 586bf11a035a34b4f926febd8e303817, type: 2}
   surface: {fileID: 3473847524073789274}
+  isRoman: {fileID: 11400000, guid: eaab4fa69e3af1a448414c0377851425, type: 2}
 --- !u!114 &3473847524073789274
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -75,6 +76,6 @@ MonoBehaviour:
   m_OverrideTileSize: 0
   m_TileSize: 256
   m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.16666667
+  m_VoxelSize: 0.33333334
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 0}

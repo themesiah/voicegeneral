@@ -740,6 +740,6 @@ PrefabInstance:
         type: 3}
       propertyPath: textAsset
       value: 
-      objectReference: {fileID: 4900000, guid: a1dedd09d86f0ee4c98a54685700bc82, type: 3}
+      objectReference: {fileID: 4900000, guid: 451f52cd6af74b8408972afa6bdecfc3, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b1f82796320e71348818776ee6fbe22f, type: 3}

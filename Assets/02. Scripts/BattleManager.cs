@@ -11,6 +11,8 @@ public class BattleManager : MonoBehaviour
     private RuntimeUnitSet allySet;
     [SerializeField]
     private RuntimeUnitSet enemySet;
+    [SerializeField]
+    private IsRoman isRoman;
     [Header("UI")]
     [SerializeField]
     private Text endText;
@@ -21,6 +23,11 @@ public class BattleManager : MonoBehaviour
     private AudioClip victoryJingle;
     [SerializeField]
     private AudioClip defeatJingle;
+    [SerializeField]
+    private AudioClip romanBgm;
+    [SerializeField]
+    private AudioClip cartagoBgm;
+    
 
     private bool initialized = false;
 
@@ -41,6 +48,14 @@ public class BattleManager : MonoBehaviour
     public void Initialize()
     {
         initialized = true;
+        if (isRoman.isRoman == true)
+        {
+            PlayBGM(romanBgm);
+        }
+        else
+        {
+            PlayBGM(cartagoBgm);
+        }
     }
 
     void Update () {
@@ -49,19 +64,19 @@ public class BattleManager : MonoBehaviour
             if (allySet.Items.Count == 0 && !finished)
             {
                 endText.text = "Has perdido la batalla, ¡pero no la guerra!";
-                PlayFinishAudio(defeatJingle);
+                PlayBGM(defeatJingle);
                 Finish();
             }
             else if (enemySet.Items.Count == 0 && !finished)
             {
                 endText.text = "¡La victoria es tuya!";
-                PlayFinishAudio(victoryJingle);
+                PlayBGM(victoryJingle);
                 Finish();
             }
         }
 	}
 
-    private void PlayFinishAudio(AudioClip clip)
+    private void PlayBGM(AudioClip clip)
     {
         if (cameraAudio != null)
         {

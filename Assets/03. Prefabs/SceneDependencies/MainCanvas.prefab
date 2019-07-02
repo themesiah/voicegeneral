@@ -274,10 +274,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   allySet: {fileID: 11400000, guid: 3efb7d8270c5420449f219c0a5bb92e8, type: 2}
   enemySet: {fileID: 11400000, guid: 7df63c8a4e5f3d04c81c6b7131e245dc, type: 2}
+  isRoman: {fileID: 11400000, guid: eaab4fa69e3af1a448414c0377851425, type: 2}
   endText: {fileID: 114427715446493616}
   endButton: {fileID: 114683414990129066}
   victoryJingle: {fileID: 8300000, guid: e1970bc27bb7e9a489c7137770220df3, type: 3}
   defeatJingle: {fileID: 8300000, guid: f4c49cb562b58c04d97a698d14d4ec1f, type: 3}
+  romanBgm: {fileID: 8300000, guid: ad93bb21fc0b11540ba32f8166057ce4, type: 3}
+  cartagoBgm: {fileID: 8300000, guid: 9a467fb333a42ab47b783341b1971da0, type: 3}
 --- !u!114 &114038092724961142
 MonoBehaviour:
   m_ObjectHideFlags: 0

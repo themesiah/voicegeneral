@@ -22,6 +22,9 @@ public class MapGenerator : MonoBehaviour
     [SerializeField]
     private NavMeshSurface surface;
 
+    [SerializeField]
+    private IsRoman isRoman;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -42,6 +45,7 @@ public class MapGenerator : MonoBehaviour
         MapLayer layerTerrain = map.layers[0];
         MapLayer layerUnits = map.layers[1];
         bool romans = map.romans;
+        isRoman.isRoman = romans;
 
         int width = map.width;
         int height = map.height;
