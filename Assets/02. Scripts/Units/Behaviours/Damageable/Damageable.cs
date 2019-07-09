@@ -14,7 +14,8 @@ public abstract class Damageable : MonoBehaviour
         Melee,
         Charge,
         Fire,
-        Artillery
+        Artillery,
+        ElephantCharge
     }
     
     public List<DamageTypes> ignoreTypes;

@@ -7,8 +7,7 @@ using UnityEngine.AI;
 public class MapGenerator : MonoBehaviour
 {
     [SerializeField]
-    private TextAsset textAsset;
-    public static TextAsset selectedLevel;
+    public static LevelListPopulator.MapFile selectedLevel;
 
     [SerializeField]
     private TilesData tilesData;
@@ -28,11 +27,7 @@ public class MapGenerator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (selectedLevel != null)
-        {
-            textAsset = selectedLevel;
-        }
-        string data = textAsset.text;
+        string data = selectedLevel.data;
         Map map = JsonUtility.FromJson<Map>(data);
         InstantiateMap(map);
         BuildNavMesh();

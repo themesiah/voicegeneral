@@ -329,3 +329,5 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
+  destroyEffect: {fileID: 1951127524092772, guid: a47bdb0e4c2c7314b896e9e0d23ffe64,
+    type: 3}

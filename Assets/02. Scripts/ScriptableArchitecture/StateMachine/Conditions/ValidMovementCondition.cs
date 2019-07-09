@@ -11,6 +11,6 @@ public class ValidMovementCondition : ScriptableCondition
         NavMeshAgent nma = controller.Unit.GetComponent<NavMeshAgent>();
         NavMeshPath p = new NavMeshPath();
         bool valid = nma.CalculatePath(controller.Input.GetPoint(), p);
-        return valid;
+        return valid && p.status == NavMeshPathStatus.PathComplete;
     }
 }

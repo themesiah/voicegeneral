@@ -21,3 +21,4 @@ MonoBehaviour:
     falseState: {fileID: 0}
   messageTransitions: []
   chargeClip: {fileID: 8300000, guid: 2d415787d82533c43b9e8cd7be483318, type: 3}
+  destroysForest: 1

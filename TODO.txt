@@ -15,6 +15,6 @@ X Banderas con numeros en vez de texturas
 X Implementar catapulta
 X Arreglar tiles
 X Selector de nivel
+X Carga de los elefantes rompe bosques
 
-- Carga de los elefantes rompe bosques
 - Añadir sonidos
